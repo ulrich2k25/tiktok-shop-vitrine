@@ -156,9 +156,9 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-900 to-blue-950 text-white">
-      <header className="flex items-center justify-between px-8 py-4 bg-gradient-to-r from-blue-900 to-blue-700 shadow-lg">
-        <div className="flex items-center space-x-4">
-          <div className="text-3xl font-extrabold tracking-wide">🛒 TikTok Shop Vitrine</div>
+      <header className="flex flex-col sm:flex-row sm:items-center justify-between px-6 py-4 bg-gradient-to-r from-blue-900 to-blue-700 shadow-lg">
+        <div className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-4">
+          <div className="text-2xl sm:text-3xl font-extrabold tracking-wide">🛒 TikTok Shop Vitrine</div>
           <nav className="flex space-x-4 text-md">
             <button className="hover:text-yellow-400" onClick={() => setCategory('sport')}>Sport</button>
             <button className="hover:text-yellow-400" onClick={() => setCategory('homme')}>Homme</button>
@@ -168,14 +168,14 @@ export default function Home() {
         </div>
       </header>
 
-      <main className="p-8">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+      <main className="p-4 sm:p-8">
+        <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {displayedProducts.map(product => (
-            <div key={product.id} className="bg-white rounded-2xl shadow-2xl p-4 text-black transition-transform transform hover:scale-105 duration-300">
+            <div key={product.id} className="bg-white rounded-2xl shadow-xl p-4 text-black transform hover:scale-105 transition-transform duration-300">
               <img src={product.image} alt={product.title ?? product.name} className="w-full h-48 object-contain rounded" />
-              <h3 className="mt-2 font-bold text-lg">{product.title ?? product.name}</h3>
-              <p className="text-sm mt-1">{product.description}</p>
-              <p className="mt-2 font-extrabold text-blue-900">{product.price}</p>
+              <h3 className="mt-2 font-bold text-lg text-center">{product.title ?? product.name}</h3>
+              <p className="text-sm mt-1 text-center">{product.description}</p>
+              <p className="mt-2 font-extrabold text-blue-900 text-center">{product.price}</p>
               <a href={product.link ?? product.tiktokLink} target="_blank" rel="noopener noreferrer"
                 className="mt-3 block bg-gradient-to-r from-pink-500 to-red-500 text-white text-center py-2 rounded-xl shadow-lg hover:opacity-90 transition-opacity duration-200">
                 Acheter sur TikTok
