@@ -1,0 +1,23 @@
+{
+  "fr": {
+    "sport": "Sport",
+    "homme": "Homme",
+    "femme": "Femme",
+    "outils": "Outils",
+    "acheter": "Acheter sur TikTok"
+  },
+  "en": {
+    "sport": "Sport",
+    "homme": "Men",
+    "femme": "Women",
+    "outils": "Tools",
+    "acheter": "Buy on TikTok"
+  },
+  "de": {
+    "sport": "Sport",
+    "homme": "Herren",
+    "femme": "Damen",
+    "outils": "Werkzeuge",
+    "acheter": "Auf TikTok kaufen"
+  }
+}

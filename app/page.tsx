@@ -1,6 +1,8 @@
 'use client';
 
 import React, { useState } from 'react';
+import translations from '../../locales/translations.json';
+
 
 // Définition des types
 type Product = {
@@ -152,6 +154,20 @@ const products: Record<Category, Product[]> = {
 
 export default function Home() {
   const [category, setCategory] = useState<Category>('sport');
+  const [locale, setLocale] = useState<'fr' | 'en' | 'de'>('fr');
+
+  // Détection automatique de la langue
+  useEffect(() => {
+    const lang = navigator.language.slice(0, 2);
+    if (lang === 'de' || lang === 'en' || lang === 'fr') {
+      setLocale(lang as 'fr' | 'en' | 'de');
+    } else {
+      setLocale('en');
+    }
+  }, []);
+
+  const t = (key: string) => translations[locale]?.[key] || key;
+
   const displayedProducts = products[category];
 
   return (
@@ -167,7 +183,7 @@ export default function Home() {
                 category === cat ? 'bg-yellow-400 text-black font-bold' : 'hover:text-yellow-400'
               }`}
             >
-              {cat.charAt(0).toUpperCase() + cat.slice(1)}
+              {t(cat)}
             </button>
           ))}
         </nav>
@@ -196,7 +212,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="mt-3 block bg-gradient-to-r from-pink-500 to-red-500 text-white text-center text-sm py-2 rounded-lg shadow-md hover:opacity-90"
               >
-                Acheter sur TikTok
+                {t('acheter')}
               </a>
             </div>
           ))}
