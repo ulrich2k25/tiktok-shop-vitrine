@@ -168,7 +168,8 @@ export default function Home() {
     }
   }, []);
 
-  const t = (key: string) => translations[locale]?.[key] || key;
+  const t = (key: string) => (translations[locale] as Record<string, string>)[key] || key;
+
 
   const displayedProducts = products[category];
 
