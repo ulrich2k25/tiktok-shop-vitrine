@@ -2,7 +2,21 @@
 
 import React, { useState } from 'react';
 
-const products = {
+// Définition des types
+type Product = {
+  id: number;
+  name?: string;
+  title?: string;
+  description: string;
+  price: string;
+  image: string;
+  tiktokLink?: string;
+  link?: string;
+};
+
+type Category = 'sport' | 'homme' | 'femme' | 'outils';
+
+const products: Record<Category, Product[]> = {
   sport: [
      {
     id: 1,
@@ -106,66 +120,50 @@ const products = {
   ],
   homme: [
     {
-      id: 6,
-      name: "Men's Colorblock Basketball Sneakers",
+      id: 5,
+      title: "Men's Colorblock Basketball Sneakers",
+      description: "Baskets confortables et légères pour homme.",
+      price: "44.99€",
       image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/f583504032f54427a0f888904b012528~tplv-o3syd03w52-resize-webp:260:260.webp",
-      price: "59.99€",
-      description: "Baskets légères et confortables pour le sport et la ville.",
-      tiktokLink: "https://www.tiktok.com/view/product/1729480302220187827",
-    },
-    {
-      id: 7,
-      name: "Unisex Colorblock Basketball Shoes",
-      image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/8013842615eb4d69950c47dbb4746ec2~tplv-o3syd03w52-resize-webp:260:260.webp",
-      price: "54.99€",
-      description: "Chaussures de basketball antidérapantes et respirantes.",
-      tiktokLink: "https://www.tiktok.com/view/product/1729480988273842980",
+      link: "https://www.tiktok.com/view/product/xxx3"
     },
   ],
   femme: [
     {
-      id: 8,
-      name: "Women's Lace Up Platform Sneakers",
-      image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/e6d6781b461c48e29b6acac6cc3bd232~tplv-o3syd03w52-resize-webp:260:260.webp",
-      price: "44.99€",
+      id: 6,
+      title: "Women's Lace Up Platform Sneakers",
       description: "Baskets compensées confortables et respirantes pour femme.",
-      tiktokLink: "https://www.tiktok.com/view/product/1729480014334892240",
-    },
-    {
-      id: 9,
-      name: "Colorblock Lace Up Sneakers",
-      image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/8757f8a963204f8f8b920b2ce212bdba~tplv-o3syd03w52-resize-webp:260:260.webp",
-      price: "39.99€",
-      description: "Chaussures de sport confortables et respirantes pour un usage quotidien.",
-      tiktokLink: "https://www.tiktok.com/view/product/1729480664506866126",
+      price: "44.99€",
+      image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/e6d6781b461c48e29b6acac6cc3bd232~tplv-o3syd03w52-resize-webp:260:260.webp",
+      link: "https://www.tiktok.com/view/product/xxx4"
     },
   ],
   outils: [
     {
-      id: 10,
-      name: "Two-Piece Boy's Basketball Set",
-      image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/f49f7bc2339b45ebbe07fa0f447adb63~tplv-o3syd03w52-resize-webp:260:260.webp",
+      id: 7,
+      title: "Kit de réparation basket",
+      description: "Kit pratique pour entretenir votre matériel de sport.",
       price: "29.99€",
-      description: "Ensemble 2 pièces garçon avec sweat-shirt et short à motif basketball.",
-      tiktokLink: "https://www.tiktok.com/view/product/1729481635933297138",
+      image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/b27a5fd6703749f68ae2bbdff3c04f55~tplv-o3syd03w52-resize-webp:260:260.webp",
+      link: "https://www.tiktok.com/view/product/xxx5"
     },
-  ],
+  ]
 };
 
 export default function Home() {
-  const [category, setCategory] = useState('sport');
+  const [category, setCategory] = useState<Category>('sport');
   const displayedProducts = products[category];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-800 to-blue-900 text-white">
-      <header className="flex items-center justify-between px-8 py-4 bg-blue-950">
+    <div className="min-h-screen bg-gradient-to-b from-gray-900 to-blue-950 text-white">
+      <header className="flex items-center justify-between px-8 py-4 bg-gradient-to-r from-blue-900 to-blue-700 shadow-lg">
         <div className="flex items-center space-x-4">
-          <div className="text-3xl font-bold">🛒 TikTok Shop Vitrine</div>
-          <nav className="flex space-x-4 text-sm">
-            <button onClick={() => setCategory('sport')} className="hover:text-yellow-300">Sport</button>
-            <button onClick={() => setCategory('homme')} className="hover:text-yellow-300">Homme</button>
-            <button onClick={() => setCategory('femme')} className="hover:text-yellow-300">Femme</button>
-            <button onClick={() => setCategory('outils')} className="hover:text-yellow-300">Outils</button>
+          <div className="text-3xl font-extrabold tracking-wide">🛒 TikTok Shop Vitrine</div>
+          <nav className="flex space-x-4 text-md">
+            <button className="hover:text-yellow-400" onClick={() => setCategory('sport')}>Sport</button>
+            <button className="hover:text-yellow-400" onClick={() => setCategory('homme')}>Homme</button>
+            <button className="hover:text-yellow-400" onClick={() => setCategory('femme')}>Femme</button>
+            <button className="hover:text-yellow-400" onClick={() => setCategory('outils')}>Outils</button>
           </nav>
         </div>
       </header>
@@ -173,19 +171,21 @@ export default function Home() {
       <main className="p-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
           {displayedProducts.map(product => (
-            <div key={product.id} className="bg-white rounded-lg shadow-lg p-4 text-black transform hover:scale-105 transition-transform duration-300">
-              <img src={product.image} alt={product.name} className="w-full h-48 object-contain rounded" />
-              <h3 className="mt-2 font-bold text-lg">{product.name}</h3>
+            <div key={product.id} className="bg-white rounded-2xl shadow-2xl p-4 text-black transition-transform transform hover:scale-105 duration-300">
+              <img src={product.image} alt={product.title ?? product.name} className="w-full h-48 object-contain rounded" />
+              <h3 className="mt-2 font-bold text-lg">{product.title ?? product.name}</h3>
               <p className="text-sm mt-1">{product.description}</p>
-              <p className="mt-2 font-bold">{product.price}</p>
-              <a href={product.tiktokLink} target="_blank" rel="noopener noreferrer" className="mt-3 block bg-black text-white text-center py-2 rounded hover:bg-yellow-500 transition-colors">Acheter sur TikTok</a>
+              <p className="mt-2 font-extrabold text-blue-900">{product.price}</p>
+              <a href={product.link ?? product.tiktokLink} target="_blank" rel="noopener noreferrer"
+                className="mt-3 block bg-gradient-to-r from-pink-500 to-red-500 text-white text-center py-2 rounded-xl shadow-lg hover:opacity-90 transition-opacity duration-200">
+                Acheter sur TikTok
+              </a>
             </div>
           ))}
         </div>
       </main>
 
-      <footer className="text-center text-xs text-gray-300 py-4">© 2025 TikTok Shop Vitrine - Tous droits réservés</footer>
+      <footer className="text-center text-xs text-gray-300 py-6">© 2025 TikTok Shop Vitrine - Tous droits réservés</footer>
     </div>
   );
 }
-
