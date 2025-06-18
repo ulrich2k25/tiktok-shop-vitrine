@@ -1,7 +1,8 @@
 'use client';
 
 import React, { useState } from 'react';
-import translations from '../../locales/translations.json';
+import translations from './locales/translations.json';
+
 
 
 // Définition des types
