@@ -156,28 +156,46 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-900 to-blue-950 text-white">
-      <header className="flex flex-col sm:flex-row sm:items-center justify-between px-6 py-4 bg-gradient-to-r from-blue-900 to-blue-700 shadow-lg">
-        <div className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-4">
-          <div className="text-2xl sm:text-3xl font-extrabold tracking-wide">🛒 TikTok Shop Vitrine</div>
-          <nav className="flex space-x-4 text-md">
-            <button className="hover:text-yellow-400" onClick={() => setCategory('sport')}>Sport</button>
-            <button className="hover:text-yellow-400" onClick={() => setCategory('homme')}>Homme</button>
-            <button className="hover:text-yellow-400" onClick={() => setCategory('femme')}>Femme</button>
-            <button className="hover:text-yellow-400" onClick={() => setCategory('outils')}>Outils</button>
-          </nav>
-        </div>
+      <header className="flex flex-col sm:flex-row items-center justify-between px-6 py-4 bg-gradient-to-r from-blue-900 to-blue-700 shadow-lg">
+        <div className="text-2xl sm:text-3xl font-extrabold tracking-wide mb-2 sm:mb-0">🛒 TikTok Shop Vitrine</div>
+        <nav className="flex space-x-4 text-sm sm:text-md">
+          {(['sport', 'homme', 'femme', 'outils'] as Category[]).map(cat => (
+            <button
+              key={cat}
+              onClick={() => setCategory(cat)}
+              className={`transition px-2 py-1 rounded ${
+                category === cat ? 'bg-yellow-400 text-black font-bold' : 'hover:text-yellow-400'
+              }`}
+            >
+              {cat.charAt(0).toUpperCase() + cat.slice(1)}
+            </button>
+          ))}
+        </nav>
       </header>
 
-      <main className="p-4 sm:p-8">
-        <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <main className="p-4 sm:p-6 md:p-8">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
           {displayedProducts.map(product => (
-            <div key={product.id} className="bg-white rounded-2xl shadow-xl p-4 text-black transform hover:scale-105 transition-transform duration-300">
-              <img src={product.image} alt={product.title ?? product.name} className="w-full h-48 object-contain rounded" />
-              <h3 className="mt-2 font-bold text-lg text-center">{product.title ?? product.name}</h3>
-              <p className="text-sm mt-1 text-center">{product.description}</p>
-              <p className="mt-2 font-extrabold text-blue-900 text-center">{product.price}</p>
-              <a href={product.link ?? product.tiktokLink} target="_blank" rel="noopener noreferrer"
-                className="mt-3 block bg-gradient-to-r from-pink-500 to-red-500 text-white text-center py-2 rounded-xl shadow-lg hover:opacity-90 transition-opacity duration-200">
+            <div
+              key={product.id}
+              className="bg-white rounded-xl shadow-lg p-3 text-black transform transition duration-300 hover:scale-105 hover:shadow-2xl"
+            >
+              <img
+                src={product.image}
+                alt={product.title ?? product.name}
+                className="w-full h-40 sm:h-44 md:h-48 object-contain rounded"
+              />
+              <h3 className="mt-2 font-bold text-sm sm:text-base">
+                {product.title ?? product.name}
+              </h3>
+              <p className="text-xs sm:text-sm mt-1">{product.description}</p>
+              <p className="mt-2 font-extrabold text-blue-900 text-sm">{product.price}</p>
+              <a
+                href={product.link ?? product.tiktokLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-3 block bg-gradient-to-r from-pink-500 to-red-500 text-white text-center text-sm py-2 rounded-lg shadow-md hover:opacity-90"
+              >
                 Acheter sur TikTok
               </a>
             </div>
@@ -185,7 +203,9 @@ export default function Home() {
         </div>
       </main>
 
-      <footer className="text-center text-xs text-gray-300 py-6">© 2025 TikTok Shop Vitrine - Tous droits réservés</footer>
+      <footer className="text-center text-xs text-gray-300 py-6">
+        © 2025 TikTok Shop Vitrine - Tous droits réservés
+      </footer>
     </div>
   );
 }
