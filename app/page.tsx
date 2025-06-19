@@ -1,5 +1,5 @@
 'use client';
-
+import Image from 'next/image';
 import React, { useState, useEffect } from 'react';
 
 import translations from './locales/translations.json';
@@ -168,22 +168,32 @@ export default function Home() {
     }
   }, []);
 
-  const t = (key: string) => (translations[locale] as Record<string, string>)[key] || key;
-
+  const t = (key: string) =>
+    (translations[locale] as Record<string, string>)[key] || key;
 
   const displayedProducts = products[category];
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-900 to-blue-950 text-white">
-      <header className="flex flex-col sm:flex-row items-center justify-between px-6 py-4 bg-gradient-to-r from-blue-900 to-blue-700 shadow-lg">
-        <div className="text-2xl sm:text-3xl font-extrabold tracking-wide mb-2 sm:mb-0">🛒 TikTok Shop Vitrine</div>
-        <nav className="flex space-x-4 text-sm sm:text-md">
+      
+      {/* 🔁 Nouveau Header avec logo */}
+      <header className="flex flex-col items-center justify-center px-6 py-4 bg-gradient-to-r from-blue-900 to-blue-700 shadow-lg">
+        <Image
+          src="/logo.png"
+          alt="Ghis TikTok Shop Trendz"
+          width={250}
+          height={250}
+          className="object-contain max-w-[70%] sm:max-w-[50%] md:max-w-[20%]"
+        />
+        <nav className="flex space-x-4 text-sm sm:text-md mt-4">
           {(['sport', 'homme', 'femme', 'outils'] as Category[]).map(cat => (
             <button
               key={cat}
               onClick={() => setCategory(cat)}
               className={`transition px-2 py-1 rounded ${
-                category === cat ? 'bg-yellow-400 text-black font-bold' : 'hover:text-yellow-400'
+                category === cat
+                  ? 'bg-yellow-400 text-black font-bold'
+                  : 'hover:text-yellow-400'
               }`}
             >
               {t(cat)}
