@@ -178,14 +178,15 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Ghis TikTok Shop Trendz</title>
-        <meta name="description" content="Découvrez les meilleurs produits TikTok sur notre vitrine tendance." />
-        <meta property="og:title" content="Ghis TikTok Shop Trendz" />
-        <meta property="og:description" content="Découvrez les meilleurs produits TikTok sur notre vitrine tendance." />
-        <meta property="og:image" content="/logo.png" />
-        <meta property="og:url" content="https://www.tiktokshoptrendz.com" />
-        <link rel="icon" href="/logo.png" />
-      </Head>
+  <title>Ghis TikTok Shop Trendz</title>
+  <meta name="description" content="Découvrez les meilleurs produits TikTok sur notre vitrine tendance." />
+  <meta property="og:title" content="Ghis TikTok Shop Trendz" />
+  <meta property="og:description" content="Découvrez les meilleurs produits TikTok sur notre vitrine tendance." />
+  <meta property="og:image" content="https://www.tiktokshoptrendz.com/logo.png" />
+  <meta property="og:url" content="https://www.tiktokshoptrendz.com" />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="/logo.png" />
+</Head>
 
       <div className="min-h-screen bg-gradient-to-b from-gray-900 to-blue-950 text-white">
         {/* Nouveau Header avec logo */}
