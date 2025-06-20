@@ -177,16 +177,21 @@ export default function Home() {
 
   return (
     <>
-      <Head>
+    <Head>
   <title>Ghis TikTok Shop Trendz</title>
   <meta name="description" content="Découvrez les meilleurs produits TikTok sur notre vitrine tendance." />
   <meta property="og:title" content="Ghis TikTok Shop Trendz" />
   <meta property="og:description" content="Découvrez les meilleurs produits TikTok sur notre vitrine tendance." />
-  <meta property="og:image" content="https://www.tiktokshoptrendz.com/logo.png" />
+  <meta property="og:image" content="https://www.tiktokshoptrendz.com/logo.png?v=2" />
   <meta property="og:url" content="https://www.tiktokshoptrendz.com" />
   <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Ghis TikTok Shop Trendz" />
+  <meta name="twitter:description" content="Découvrez les meilleurs produits TikTok sur notre vitrine tendance." />
+  <meta name="twitter:image" content="https://www.tiktokshoptrendz.com/logo.png?v=2" />
   <link rel="icon" href="/logo.png" />
 </Head>
+
 
       <div className="min-h-screen bg-gradient-to-b from-gray-900 to-blue-950 text-white">
         {/* Nouveau Header avec logo */}
