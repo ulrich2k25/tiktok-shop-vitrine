@@ -178,20 +178,21 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Ghis TikTok Shop Trendz</title>
-        <meta name="description" content="Découvrez les meilleurs produits TikTok sur notre vitrine tendance." />
-        <meta property="og:title" content="Ghis TikTok Shop Trendz" />
-        <meta property="og:description" content="Découvrez les meilleurs produits TikTok sur notre vitrine tendance." />
-        <meta property="og:image" content="https://i.ibb.co/mCc3h46w/logo.png" />
-        <meta property="og:url" content="https://www.tiktokshoptrendz.com" />
-        <meta property="og:type" content="website" />
-        <link rel="icon" href="https://i.ibb.co/mCc3h46w/logo.png" />
-      </Head>
+  <title>Ghis TikTok Shop Trendz</title>
+  <meta name="description" content="Découvrez les meilleurs produits TikTok sur notre vitrine tendance." />
+  <meta property="og:title" content="Ghis TikTok Shop Trendz" />
+  <meta property="og:description" content="Découvrez les meilleurs produits TikTok sur notre vitrine tendance." />
+  <meta property="og:image" content="https://www.tiktokshoptrendz.com/logo.png" />
+  <meta property="og:url" content="https://www.tiktokshoptrendz.com" />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="/logo.png" />
+</Head>
 
       <div className="min-h-screen bg-gradient-to-b from-gray-900 to-blue-950 text-white">
+        {/* Nouveau Header avec logo */}
         <header className="flex flex-col items-center justify-center px-6 py-4 bg-gradient-to-r from-blue-900 to-blue-700 shadow-lg">
           <Image
-            src="https://i.ibb.co/mCc3h46w/logo.png"
+            src="/logo.png"
             alt="Ghis TikTok Shop Trendz"
             width={250}
             height={250}
