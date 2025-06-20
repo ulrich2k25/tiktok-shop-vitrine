@@ -177,27 +177,21 @@ export default function Home() {
 
   return (
     <>
-    <Head>
-  <title>Ghis TikTok Shop Trendz</title>
-  <meta name="description" content="Découvrez les meilleurs produits TikTok sur notre vitrine tendance." />
-  <meta property="og:title" content="Ghis TikTok Shop Trendz" />
-  <meta property="og:description" content="Découvrez les meilleurs produits TikTok sur notre vitrine tendance." />
-  <meta property="og:image" content="https://www.tiktokshoptrendz.com/logo.png?v=2" />
-  <meta property="og:url" content="https://www.tiktokshoptrendz.com" />
-  <meta property="og:type" content="website" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Ghis TikTok Shop Trendz" />
-  <meta name="twitter:description" content="Découvrez les meilleurs produits TikTok sur notre vitrine tendance." />
-  <meta name="twitter:image" content="https://www.tiktokshoptrendz.com/logo.png?v=2" />
-  <link rel="icon" href="/logo.png" />
-</Head>
-
+      <Head>
+        <title>Ghis TikTok Shop Trendz</title>
+        <meta name="description" content="Découvrez les meilleurs produits TikTok sur notre vitrine tendance." />
+        <meta property="og:title" content="Ghis TikTok Shop Trendz" />
+        <meta property="og:description" content="Découvrez les meilleurs produits TikTok sur notre vitrine tendance." />
+        <meta property="og:image" content="https://i.ibb.co/mCc3h46w/logo.png" />
+        <meta property="og:url" content="https://www.tiktokshoptrendz.com" />
+        <meta property="og:type" content="website" />
+        <link rel="icon" href="https://i.ibb.co/mCc3h46w/logo.png" />
+      </Head>
 
       <div className="min-h-screen bg-gradient-to-b from-gray-900 to-blue-950 text-white">
-        {/* Nouveau Header avec logo */}
         <header className="flex flex-col items-center justify-center px-6 py-4 bg-gradient-to-r from-blue-900 to-blue-700 shadow-lg">
           <Image
-            src="/logo.png"
+            src="https://i.ibb.co/mCc3h46w/logo.png"
             alt="Ghis TikTok Shop Trendz"
             width={250}
             height={250}
