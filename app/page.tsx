@@ -1,6 +1,5 @@
 'use client';
 
-import { useSearchParams } from 'next/navigation';
 import React, { useState, useEffect } from 'react';
 import translations from './locales/translations.json';
 
@@ -154,10 +153,7 @@ const products: Record<Category, Product[]> = {
 };
 
 export default function Home() {
-  const searchParams = useSearchParams();
-  const selectedCategory = (searchParams.get('category') as Category) || 'sport';
-  const displayedProducts = products[selectedCategory] || products['sport'];
-
+  const [selectedCategory, setSelectedCategory] = useState<Category>('sport');
   const [locale, setLocale] = useState<'fr' | 'en' | 'de'>('fr');
 
   useEffect(() => {
@@ -167,9 +163,16 @@ export default function Home() {
     } else {
       setLocale('en');
     }
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const categoryParam = urlParams.get('category') as Category;
+    if (categoryParam && ['sport', 'homme', 'femme', 'outils'].includes(categoryParam)) {
+      setSelectedCategory(categoryParam);
+    }
   }, []);
 
   const t = (key: string) => (translations[locale] as Record<string, string>)[key] || key;
+  const displayedProducts = products[selectedCategory];
 
   return (
     <div className="min-h-screen text-white">
