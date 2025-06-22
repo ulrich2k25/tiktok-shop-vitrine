@@ -165,14 +165,23 @@ const products: Record<Category, Product[]> = {
 
   ],
   femme: [
-    {
-      id: 6,
-      title: "Women's Lace Up Platform Sneakers",
-      description: "Baskets compensées confortables et respirantes pour femme.",
-      price: "44.99€",
-      image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/e6d6781b461c48e29b6acac6cc3bd232~tplv-o3syd03w52-resize-webp:260:260.webp",
-      link: "https://www.tiktok.com/view/product/xxx4"
-    },
+   {
+  id: 102,
+  name: "Women's Embroidering Design Pocket Denim Pants",
+  image: "https://p16-oec-eu-common-no.tiktokcdn-eu.com/tos-no1a-i-t5fjg24jzw-no/bc030196f6c747019c6adee266abaf9f~tplv-t5fjg24jzw-resize-webp:260:260.webp",
+  price: "39.99€",
+  description: "Casual Fashion Loose Comfy Wide Leg Trousers for Daily Wear, Love Handles Low Waist Jeans, All Seasons.",
+  tiktokLink: "https://www.tiktok.com/view/product/1729520822522714812"
+},
+{
+  id: 103,
+  name: "Women's Cut Out Ripped Wide Leg Jeans",
+  image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/21208c5a3cb24425bb43fa95b235aa4f~tplv-o3syd03w52-resize-webp:260:260.webp",
+  price: "39.99€",
+  description: "Fashion Casual High Waist Straight Leg Distressed Denim Pants for Daily Outdoor Wear, All Seasons.",
+  tiktokLink: "https://www.tiktok.com/view/product/1729481800901826808"
+}
+
   ],
   outils: [
 {
@@ -187,13 +196,14 @@ const products: Record<Category, Product[]> = {
   ],
     bijoux: [
     {
-      id: 100,
-      name: "Luxury Diamond Bracelet",
-      image: "https://example.com/your-image.jpg",
-      price: "99.99€",
-      description: "Bracelet en diamant luxueux pour toutes occasions.",
-      tiktokLink: "https://www.tiktok.com/view/product/xxx"
-    },
+  id: 101,
+  name: "Rhinestone Decorated Bangle Bracelet",
+  image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/70a0cd48f0c24bd39383dd306ec61901~tplv-o3syd03w52-resize-webp:260:260.webp",
+  price: "29.99€",
+  description: "Fashionable Jewelry for Women & Men for Party, Daily Clothing Decor, Trendy All-match & Exquisite Jewelry for Gift.",
+  tiktokLink: "https://www.tiktok.com/view/product/1729480602598546200"
+}
+
   ]
 };
 
@@ -238,7 +248,8 @@ export default function Home() {
     window.location.search = params.toString();
   };
 
-  return (
+ return (
+  <>
     <main className="p-4 sm:p-6 md:p-8">
 
       {/* Navigation des catégories */}
@@ -248,7 +259,7 @@ export default function Home() {
             key={cat}
             onClick={() => {
               setSelectedCategory(cat);
-              setCurrentPage(1); // Reset page 1 si on change de catégorie
+              setCurrentPage(1);
               const params = new URLSearchParams(window.location.search);
               params.set('category', cat);
               params.set('page', '1');
@@ -312,10 +323,9 @@ export default function Home() {
         </div>
       )}
     </main>
-	
-	  <footer className="text-center text-xs text-gray-300 py-6">
-        © 2025 TikTok Shop Vitrine - Tous droits réservés
-      </footer>
-    </div>
-  );
-}
+
+    <footer className="text-center text-xs text-gray-300 py-6">
+      © 2025 TikTok Shop Vitrine - Tous droits réservés
+    </footer>
+  </>
+);
