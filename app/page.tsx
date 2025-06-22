@@ -197,7 +197,7 @@ const products: Record<Category, Product[]> = {
   ]
 };
 
-// Paramètres pagination
+// Pagination
 const ITEMS_PER_PAGE = 20;
 
 export default function Home() {
@@ -223,10 +223,7 @@ export default function Home() {
     setCurrentPage(pageParam >= 1 ? pageParam : 1);
   }, []);
 
-  // Fonction traduction
   const t = (key: string) => (translations[locale] as Record<string, string>)[key] || key;
-
-  // Filtrage pagination
   const allProducts = products[selectedCategory];
   const totalPages = Math.ceil(allProducts.length / ITEMS_PER_PAGE);
   const displayedProducts = allProducts.slice(
@@ -234,7 +231,6 @@ export default function Home() {
     currentPage * ITEMS_PER_PAGE
   );
 
-  // Gestion changement de page
   const goToPage = (page: number) => {
     const params = new URLSearchParams(window.location.search);
     params.set('category', selectedCategory);
@@ -244,6 +240,31 @@ export default function Home() {
 
   return (
     <main className="p-4 sm:p-6 md:p-8">
+
+      {/* Navigation des catégories */}
+      <nav className="flex flex-wrap justify-center gap-3 my-6">
+        {(['sport', 'homme', 'femme', 'outils', 'bijoux'] as Category[]).map((cat: Category) => (
+          <button
+            key={cat}
+            onClick={() => {
+              setSelectedCategory(cat);
+              setCurrentPage(1); // Reset page 1 si on change de catégorie
+              const params = new URLSearchParams(window.location.search);
+              params.set('category', cat);
+              params.set('page', '1');
+              window.history.replaceState({}, '', `${window.location.pathname}?${params.toString()}`);
+            }}
+            className={`px-4 py-2 rounded-full text-sm font-semibold transition ${
+              selectedCategory === cat
+                ? 'bg-white text-black shadow-md'
+                : 'bg-blue-700 text-white hover:bg-white hover:text-black'
+            }`}
+          >
+            {t(cat)}
+          </button>
+        ))}
+      </nav>
+
       <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
         {displayedProducts.map((product: Product) => (
           <div
@@ -272,7 +293,6 @@ export default function Home() {
         ))}
       </div>
 
-      {/* Pagination */}
       {totalPages > 1 && (
         <div className="flex justify-center mt-8 space-x-2">
           {[...Array(totalPages)].map((_, index) => {

@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Link from 'next/link';
-
+import Image from "next/image";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -43,42 +42,28 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{ children: React.ReactNode }>) {
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
     <html lang="fr">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gradient-to-b from-black to-blue-950 text-white`}>
-        <Header />
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <div className="flex flex-col items-center bg-black text-white py-4">
+          <div className="relative">
+            <Image
+              src="/logo.png"
+              alt="Ghis TikTok Shop Trendz"
+              width={300}
+              height={300}
+              className="object-contain rounded-lg shadow-lg"
+              style={{
+                boxShadow: "0 0 40px 15px rgba(255, 0, 153, 0.6)"
+              }}
+            />
+          </div>
+        </div>
         {children}
-        <footer className="text-center text-xs text-gray-300 py-6">
-          © 2025 TikTok Shop Vitrine - Tous droits réservés
-        </footer>
       </body>
     </html>
-  );
-}
-
-// Séparer le header dans un composant interne propre
-function Header() {
-  const categories = ["sport", "homme", "femme", "outils", "bijoux"];
-
-  return (
-    <header className="flex flex-col items-center py-6 bg-black">
-      <img
-        src="/logo.png"
-        alt="Ghis TikTok Shop Trendz"
-        className="w-48 sm:w-60 md:w-72 mb-4"
-      />
-      <nav className="flex flex-wrap justify-center gap-4">
-        {categories.map((cat) => (
-          <Link
-            key={cat}
-            href={`/?category=${cat}`}
-            className="px-4 py-2 rounded-full border-2 border-white text-white hover:bg-white hover:text-black transition font-semibold"
-          >
-            {cat.charAt(0).toUpperCase() + cat.slice(1)}
-          </Link>
-        ))}
-      </nav>
-    </header>
   );
 }
