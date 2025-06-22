@@ -119,6 +119,15 @@ const products: Record<Category, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729481635933297138",
 },
 
+{
+  id: 13,
+  name: "POSTURE Haltungstrainer",
+  image: "https://p16-oec-eu-common-no.tiktokcdn-eu.com/tos-no1a-i-t5fjg24jzw-no/c6a62bae21dc4dabbe8c18626626bd6e~tplv-t5fjg24jzw-resize-webp:260:260.webp",
+  price: "29.99€",
+  description: "Haltungstrainer für verbesserte Körperhaltung und muskuläre Stärkung.",
+  tiktokLink: "https://www.tiktok.com/view/product/1729489255039408667"
+}
+
   ],
   homme: [
     {
