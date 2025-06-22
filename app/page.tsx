@@ -205,7 +205,8 @@ export default function Home() {
             className="object-contain max-w-[70%] sm:max-w-[50%] md:max-w-[20%]"
           />
           <nav className="flex space-x-4 text-sm sm:text-md mt-4">
-            {(['sport', 'homme', 'femme', 'outils']).map(cat => (
+           {(['sport', 'homme', 'femme', 'outils'] as Category[]).map((cat: Category) => (
+
               <button
                 key={cat}
                 onClick={() => setCategory(cat)}
