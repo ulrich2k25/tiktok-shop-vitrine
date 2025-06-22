@@ -1,10 +1,8 @@
 'use client';
 
-import Image from 'next/image';
+import { useSearchParams } from 'next/navigation';
 import React, { useState, useEffect } from 'react';
-
 import translations from './locales/translations.json';
-
 
 
 // Définition des types
@@ -156,7 +154,10 @@ const products: Record<Category, Product[]> = {
 };
 
 export default function Home() {
-  const [category, setCategory] = useState<Category>('sport');
+  const searchParams = useSearchParams();
+  const selectedCategory = (searchParams.get('category') as Category) || 'sport';
+  const displayedProducts = products[selectedCategory] || products['sport'];
+
   const [locale, setLocale] = useState<'fr' | 'en' | 'de'>('fr');
 
   useEffect(() => {
@@ -168,38 +169,10 @@ export default function Home() {
     }
   }, []);
 
-  const t = (key: string) =>
-    (translations[locale] as Record<string, string>)[key] || key;
-
-  const displayedProducts = products[category];
+  const t = (key: string) => (translations[locale] as Record<string, string>)[key] || key;
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-900 to-blue-950 text-white">
-      <header className="flex flex-col items-center justify-center px-6 py-4 bg-gradient-to-r from-blue-900 to-blue-700 shadow-lg">
-        <Image
-          src="/logo.png"
-          alt="Ghis TikTok Shop Trendz"
-          width={250}
-          height={250}
-          className="object-contain max-w-[70%] sm:max-w-[50%] md:max-w-[20%]"
-        />
-        <nav className="flex space-x-4 text-sm sm:text-md mt-4">
-          {(['sport', 'homme', 'femme', 'outils'] as Category[]).map((cat: Category) => (
-            <button
-              key={cat}
-              onClick={() => setCategory(cat)}
-              className={`transition px-2 py-1 rounded ${
-                category === cat
-                  ? 'bg-yellow-400 text-black font-bold'
-                  : 'hover:text-yellow-400'
-              }`}
-            >
-              {t(cat)}
-            </button>
-          ))}
-        </nav>
-      </header>
-
+    <div className="min-h-screen text-white">
       <main className="p-4 sm:p-6 md:p-8">
         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
           {displayedProducts.map((product: Product) => (

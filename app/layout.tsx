@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
+import Link from "next/link";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -72,6 +73,12 @@ export default function RootLayout({
             height={250}
             className="object-contain max-w-[70%] sm:max-w-[50%] md:max-w-[20%] drop-shadow-[0_0_20px_#ff00ff]"
           />
+          <nav className="flex space-x-4 text-sm sm:text-md mt-4">
+            <Link href="/?category=sport" className="text-white hover:text-yellow-400 font-semibold">Sport</Link>
+            <Link href="/?category=homme" className="text-white hover:text-yellow-400 font-semibold">Homme</Link>
+            <Link href="/?category=femme" className="text-white hover:text-yellow-400 font-semibold">Femme</Link>
+            <Link href="/?category=outils" className="text-white hover:text-yellow-400 font-semibold">Outils</Link>
+          </nav>
         </div>
         {children}
         <Script id="structured-data" type="application/ld+json">
