@@ -16,7 +16,7 @@ type Product = {
   link?: string;
 };
 
-type Category = 'sport' | 'homme' | 'femme' | 'outils';
+type Category = 'sport' | 'homme' | 'femme' | 'outils' | 'bijoux';
 
 const products: Record<Category, Product[]> = {
   sport: [
@@ -126,18 +126,43 @@ const products: Record<Category, Product[]> = {
   price: "29.99€",
   description: "Haltungstrainer für verbesserte Körperhaltung und muskuläre Stärkung.",
   tiktokLink: "https://www.tiktok.com/view/product/1729489255039408667"
-}
+},
+{
+  id: 18,
+  name: "Fußballschuhe für Jungen und Mädchen",
+  image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/a119d41ef16047f29317cd561b666836~tplv-o3syd03w52-resize-webp:260:260.webp",
+  price: "34.99€",
+  description: "Professionelle Trainings- und Wettkampfschuhe mit langen Spikes, Unisex für Teenager.",
+  tiktokLink: "https://www.tiktok.com/view/product/1729540863620978785"
+},
 
   ],
   homme: [
     {
-      id: 5,
-      title: "Men's Colorblock Basketball Sneakers",
-      description: "Baskets confortables et légères pour homme.",
-      price: "44.99€",
-      image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/f583504032f54427a0f888904b012528~tplv-o3syd03w52-resize-webp:260:260.webp",
-      link: "https://www.tiktok.com/view/product/xxx3"
-    },
+  id: 14,
+  name: "Men's Letter Print Round Neck Tee",
+  image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/c58276a2749444bb864f9ad5b723bd4e~tplv-o3syd03w52-resize-webp:260:260.webp",
+  price: "19.99€",
+  description: "Regular Fit Casual Short Sleeve Crew Neck T-Shirt for Summer.",
+  tiktokLink: "https://www.tiktok.com/view/product/1729490583109605513"
+},
+{
+  id: 15,
+  name: "Men's Letter & Number Print Round Neck Tee",
+  image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/d65a69ddf7e040ecae58bca81231543c~tplv-o3syd03w52-resize-webp:260:260.webp",
+  price: "19.99€",
+  description: "Casual Short Sleeve Crew Neck T-Shirt for Summer, Tropical Style.",
+  tiktokLink: "https://www.tiktok.com/view/product/1729490563639188462"
+},
+{
+  id: 16,
+  name: "Men's Basketball Print Shorts",
+  image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/855088104a5249a88d80b7409b5c91a7~tplv-o3syd03w52-resize-webp:260:260.webp",
+  price: "24.99€",
+  description: "Loose Casual Relaxed Fit Breathable Comfortable Shorts for Summer Gym & Basketball.",
+  tiktokLink: "https://www.tiktok.com/view/product/1729482769530591485"
+}
+
   ],
   femme: [
     {
@@ -150,13 +175,24 @@ const products: Record<Category, Product[]> = {
     },
   ],
   outils: [
+{
+  id: 17,
+  name: "Stanley Quencher H2.0 Becher 2025",
+  image: "https://p16-oec-eu-common-no.tiktokcdn-eu.com/tos-no1a-i-t5fjg24jzw-no/35a3196e17b64f7dacf76deb82779c1e~tplv-t5fjg24jzw-resize-webp:260:260.webp",
+  price: "39.99€",
+  description: "850ml Edelstahl-Isolierbecher mit Griff & Strohhalm, Flowstate Deckel, BPA-frei, ideal für Reisen.",
+  tiktokLink: "https://www.tiktok.com/view/product/1729523138086738199"
+}
+
+  ],
+    bijoux: [
     {
-      id: 7,
-      title: "Kit de réparation basket",
-      description: "Kit pratique pour entretenir votre matériel de sport.",
-      price: "29.99€",
-      image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/b27a5fd6703749f68ae2bbdff3c04f55~tplv-o3syd03w52-resize-webp:260:260.webp",
-      link: "https://www.tiktok.com/view/product/xxx5"
+      id: 100,
+      name: "Luxury Diamond Bracelet",
+      image: "https://example.com/your-image.jpg",
+      price: "99.99€",
+      description: "Bracelet en diamant luxueux pour toutes occasions.",
+      tiktokLink: "https://www.tiktok.com/view/product/xxx"
     },
   ]
 };
@@ -164,6 +200,8 @@ const products: Record<Category, Product[]> = {
 export default function Home() {
   const [selectedCategory, setSelectedCategory] = useState<Category>('sport');
   const [locale, setLocale] = useState<'fr' | 'en' | 'de'>('fr');
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 20;
 
   useEffect(() => {
     const lang = navigator.language.slice(0, 2);
@@ -172,47 +210,75 @@ export default function Home() {
     } else {
       setLocale('en');
     }
-
-    const urlParams = new URLSearchParams(window.location.search);
-    const categoryParam = urlParams.get('category') as Category;
-    if (categoryParam && ['sport', 'homme', 'femme', 'outils'].includes(categoryParam)) {
-      setSelectedCategory(categoryParam);
-    }
   }, []);
 
   const t = (key: string) => (translations[locale] as Record<string, string>)[key] || key;
+
+  const handleCategoryChange = (category: Category) => {
+    setSelectedCategory(category);
+    setCurrentPage(1);
+  };
+
   const displayedProducts = products[selectedCategory];
+  const paginatedProducts = displayedProducts.slice(
+    (currentPage - 1) * itemsPerPage,
+    currentPage * itemsPerPage
+  );
+
+  const totalPages = Math.ceil(displayedProducts.length / itemsPerPage);
 
   return (
     <div className="min-h-screen text-white">
+      <header className="flex flex-col items-center justify-center px-6 py-4 bg-gradient-to-r from-blue-900 to-blue-700 shadow-lg">
+        <img src="/logo.png" alt="Logo" className="w-40 h-40 object-contain" />
+        <nav className="flex flex-wrap justify-center gap-3 mt-4">
+          {(['sport', 'homme', 'femme', 'outils', 'bijoux'] as Category[]).map((cat) => (
+            <button
+              key={cat}
+              onClick={() => handleCategoryChange(cat)}
+              className={`px-3 py-1 rounded-full font-semibold transition ${
+                selectedCategory === cat
+                  ? 'bg-yellow-400 text-black'
+                  : 'bg-white text-black hover:bg-yellow-300'
+              }`}
+            >
+              {t(cat)}
+            </button>
+          ))}
+        </nav>
+      </header>
+
       <main className="p-4 sm:p-6 md:p-8">
         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
-          {displayedProducts.map((product: Product) => (
-            <div
-              key={product.id}
-              className="bg-white rounded-xl shadow-lg p-3 text-black transform transition duration-300 hover:scale-105 hover:shadow-2xl"
-            >
-              <img
-                src={product.image}
-                alt={product.title ?? product.name}
-                className="w-full h-40 sm:h-44 md:h-48 object-contain rounded"
-              />
-              <h3 className="mt-2 font-bold text-sm sm:text-base">
-                {product.title ?? product.name}
-              </h3>
-              <p className="text-xs sm:text-sm mt-1">{product.description}</p>
+          {paginatedProducts.map((product) => (
+            <div key={product.id} className="bg-white rounded-xl shadow-lg p-3 text-black transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+              <img src={product.image} alt={product.title ?? product.name} className="w-full h-40 object-contain rounded" />
+              <h3 className="mt-2 font-bold text-sm">{product.title ?? product.name}</h3>
+              <p className="text-xs mt-1">{product.description}</p>
               <p className="mt-2 font-extrabold text-blue-900 text-sm">{product.price}</p>
-              <a
-                href={product.link ?? product.tiktokLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-3 block bg-gradient-to-r from-pink-500 to-red-500 text-white text-center text-sm py-2 rounded-lg shadow-md hover:opacity-90"
-              >
+              <a href={product.link ?? product.tiktokLink} target="_blank" rel="noopener noreferrer" className="mt-3 block bg-gradient-to-r from-pink-500 to-red-500 text-white text-center text-sm py-2 rounded-lg shadow-md hover:opacity-90">
                 {t('acheter')}
               </a>
             </div>
           ))}
         </div>
+
+        {/* Pagination */}
+        {totalPages > 1 && (
+          <div className="flex justify-center mt-8 space-x-2">
+            {Array.from({ length: totalPages }, (_, index) => (
+              <button
+                key={index}
+                onClick={() => setCurrentPage(index + 1)}
+                className={`w-8 h-8 rounded-full font-semibold ${
+                  currentPage === index + 1 ? 'bg-yellow-400 text-black' : 'bg-white text-black hover:bg-yellow-300'
+                }`}
+              >
+                {index + 1}
+              </button>
+            ))}
+          </div>
+        )}
       </main>
 
       <footer className="text-center text-xs text-gray-300 py-6">

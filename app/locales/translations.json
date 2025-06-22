@@ -4,6 +4,7 @@
     "homme": "Homme",
     "femme": "Femme",
     "outils": "Outils",
+    "bijoux": "Bijoux",
     "acheter": "Acheter sur TikTok"
   },
   "en": {
@@ -11,6 +12,7 @@
     "homme": "Men",
     "femme": "Women",
     "outils": "Tools",
+    "bijoux": "Jewelry",
     "acheter": "Buy on TikTok"
   },
   "de": {
@@ -18,6 +20,7 @@
     "homme": "Herren",
     "femme": "Damen",
     "outils": "Werkzeuge",
+    "bijoux": "Schmuck",
     "acheter": "Auf TikTok kaufen"
   }
 }
