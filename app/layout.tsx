@@ -1,9 +1,8 @@
-'use client';
-
+import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import React, { useState, useEffect } from "react";
-import translations from "./locales/translations.json";
+import Link from 'next/link';
+import { usePathname, useSearchParams } from 'next/navigation';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,66 +14,71 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+export const metadata: Metadata = {
+  title: "Ghis TikTok Shop Trendz",
+  description: "Découvrez les meilleurs produits TikTok sur notre vitrine tendance.",
+  openGraph: {
+    title: "Ghis TikTok Shop Trendz",
+    description: "Découvrez les meilleurs produits TikTok sur notre vitrine tendance.",
+    url: "https://www.tiktokshoptrendz.com/",
+    siteName: "Ghis TikTok Shop Trendz",
+    images: [
+      {
+        url: "https://i.ibb.co/mCc3h46w/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Ghis TikTok Shop Trendz",
+      },
+    ],
+    locale: "fr_FR",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Ghis TikTok Shop Trendz",
+    description: "Découvrez les meilleurs produits TikTok sur notre vitrine tendance.",
+    images: ["https://i.ibb.co/mCc3h46w/logo.png"],
+  },
+};
+
 export default function RootLayout({
   children,
-}: {
-  children: React.ReactNode;
-}) {
-  const [activeCategory, setActiveCategory] = useState<string>('sport');
-  const [locale, setLocale] = useState<'fr' | 'en' | 'de'>('fr');
-
-  useEffect(() => {
-    const lang = navigator.language.slice(0, 2);
-    if (lang === 'de' || lang === 'en' || lang === 'fr') {
-      setLocale(lang as 'fr' | 'en' | 'de');
-    } else {
-      setLocale('en');
-    }
-
-    const urlParams = new URLSearchParams(window.location.search);
-    const cat = urlParams.get('category');
-    if (cat) {
-      setActiveCategory(cat);
-    } else {
-      setActiveCategory('sport');
-    }
-  }, []);
-
-  const t = (key: string) => (translations[locale] as Record<string, string>)[key] || key;
-
-  const handleCategoryClick = (category: string) => {
-    window.location.href = `/?category=${category}`;
-  };
-
+}: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang={locale}>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gradient-to-b from-purple-900 via-purple-950 to-black`}>
-        <div className="flex flex-col items-center justify-center px-6 py-4 shadow-lg">
-          <img
-            src="/logo.png"
-            alt="Ghis TikTok Shop Trendz"
-            width={250}
-            height={250}
-            className="object-contain max-w-[70%] sm:max-w-[50%] md:max-w-[20%] drop-shadow-[0_0_20px_#ff00ff]"
-          />
-          <nav className="flex space-x-4 text-sm sm:text-md mt-4">
-            {['sport', 'homme', 'femme', 'outils'].map((cat) => (
-              <button
-                key={cat}
-                onClick={() => handleCategoryClick(cat)}
-                className={`transition px-2 py-1 rounded ${
-                  activeCategory === cat
-                    ? 'bg-yellow-400 text-black font-bold'
-                    : 'hover:text-yellow-400 text-white'
-                }`}
-              >
-                {t(cat)}
-              </button>
-            ))}
-          </nav>
-        </div>
+    <html lang="fr">
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gradient-to-b from-black to-blue-950 text-white`}>
+        <Header />
         {children}
+        <footer className="text-center text-xs text-gray-300 py-6">
+          © 2025 TikTok Shop Vitrine - Tous droits réservés
+        </footer>
       </body>
     </html>
+  );
+}
+
+// Séparer le header dans un composant interne propre
+function Header() {
+  const categories = ["sport", "homme", "femme", "outils", "bijoux"];
+
+  return (
+    <header className="flex flex-col items-center py-6 bg-black">
+      <img
+        src="/logo.png"
+        alt="Ghis TikTok Shop Trendz"
+        className="w-48 sm:w-60 md:w-72 mb-4"
+      />
+      <nav className="flex flex-wrap justify-center gap-4">
+        {categories.map((cat) => (
+          <Link
+            key={cat}
+            href={`/?category=${cat}`}
+            className="px-4 py-2 rounded-full border-2 border-white text-white hover:bg-white hover:text-black transition font-semibold"
+          >
+            {cat.charAt(0).toUpperCase() + cat.slice(1)}
+          </Link>
+        ))}
+      </nav>
+    </header>
   );
 }
