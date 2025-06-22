@@ -322,10 +322,12 @@ export default function Home() {
           })}
         </div>
       )}
-    </main>
+    
 
     <footer className="text-center text-xs text-gray-300 py-6">
       © 2025 TikTok Shop Vitrine - Tous droits réservés
     </footer>
-  </>
+	</main>
+  
 );
+}
