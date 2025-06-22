@@ -1,8 +1,6 @@
 'use client';
 
-import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import Script from "next/script";
 import "./globals.css";
 import React, { useState, useEffect } from "react";
 import translations from "./locales/translations.json";
@@ -16,33 +14,6 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
-
-export const metadata: Metadata = {
-  title: "Ghis TikTok Shop Trendz",
-  description: "Achetez les meilleurs produits viraux TikTok : sport, mode, gadgets et maison. Livraison rapide, qualité garantie.",
-  openGraph: {
-    title: "Ghis TikTok Shop Trendz",
-    description: "Découvrez notre sélection de produits viraux TikTok pour le sport, la mode et la maison.",
-    url: "https://www.tiktokshoptrendz.com/",
-    siteName: "Ghis TikTok Shop Trendz",
-    images: [
-      {
-        url: "https://i.ibb.co/mCc3h46w/logo.png",
-        width: 1200,
-        height: 630,
-        alt: "Ghis TikTok Shop Trendz",
-      },
-    ],
-    locale: "fr_FR",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Ghis TikTok Shop Trendz",
-    description: "Produits TikTok tendance en vente : sport, mode, gadgets, accessoires, maison.",
-    images: ["https://i.ibb.co/mCc3h46w/logo.png"],
-  },
-};
 
 export default function RootLayout({
   children,
@@ -76,7 +47,7 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="fr">
+    <html lang={locale}>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gradient-to-b from-purple-900 via-purple-950 to-black`}>
         <div className="flex flex-col items-center justify-center px-6 py-4 shadow-lg">
           <img
@@ -103,23 +74,6 @@ export default function RootLayout({
           </nav>
         </div>
         {children}
-        <Script id="structured-data" type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebSite",
-            "name": "Ghis TikTok Shop Trendz",
-            "url": "https://www.tiktokshoptrendz.com/",
-            "description": "Découvrez les meilleurs produits TikTok tendance : sport, mode, gadgets, maison.",
-            "publisher": {
-              "@type": "Organization",
-              "name": "Ghis TikTok Shop",
-              "logo": {
-                "@type": "ImageObject",
-                "url": "https://i.ibb.co/mCc3h46w/logo.png"
-              }
-            }
-          })}
-        </Script>
       </body>
     </html>
   );
