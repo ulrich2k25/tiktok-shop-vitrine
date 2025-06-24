@@ -128,18 +128,27 @@ const products: Record<Category, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729489255039408667"
 },
 {
-  id: 18,
+  id: 14,
   name: "Fußballschuhe für Jungen und Mädchen",
   image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/a119d41ef16047f29317cd561b666836~tplv-o3syd03w52-resize-webp:260:260.webp",
   price: "34.99€",
   description: "Professionelle Trainings- und Wettkampfschuhe mit langen Spikes, Unisex für Teenager.",
   tiktokLink: "https://www.tiktok.com/view/product/1729540863620978785"
 },
+{
+  id: 15,
+  name: "Skipping Rope with Ball Bearings",
+  image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/3b1cc191ef2343b8bae3fc596267fbbe~tplv-o3syd03w52-resize-webp:260:260.webp",
+  price: "19.99€",
+  description: "Rapid Jump Skipping Ropes for Aerobic Exercise Speed Training & Jumping Training Accessories.",
+  tiktokLink: "https://www.tiktok.com/view/product/1729480320958830962"
+},
+
 
   ],
   homme: [
     {
-  id: 14,
+  id: 1,
   name: "Men's Letter Print Round Neck Tee",
   image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/c58276a2749444bb864f9ad5b723bd4e~tplv-o3syd03w52-resize-webp:260:260.webp",
   price: "19.99€",
@@ -147,7 +156,7 @@ const products: Record<Category, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729490583109605513"
 },
 {
-  id: 15,
+  id: 2,
   name: "Men's Letter & Number Print Round Neck Tee",
   image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/d65a69ddf7e040ecae58bca81231543c~tplv-o3syd03w52-resize-webp:260:260.webp",
   price: "19.99€",
@@ -155,7 +164,7 @@ const products: Record<Category, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729490563639188462"
 },
 {
-  id: 16,
+  id: 3,
   name: "Men's Basketball Print Shorts",
   image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/855088104a5249a88d80b7409b5c91a7~tplv-o3syd03w52-resize-webp:260:260.webp",
   price: "24.99€",
@@ -163,7 +172,7 @@ const products: Record<Category, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729482769530591485"
 },
 {
-  id: 104,
+  id: 4,
   name: "Men's Letter Print Denim Shorts",
   image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/d6ebee90280d4b85b73e00aa3b2f4d7c~tplv-o3syd03w52-resize-webp:260:260.webp",
   price: "29.99€",
@@ -171,14 +180,14 @@ const products: Record<Category, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729500909793024819"
 },
 {
-  id: 110,
+  id: 5,
   name: "Men's Thermal Lined Side Stripe Hoodie & Pants Set",
   image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/5132c40825674b24bcfbb910d0d45b9b~tplv-o3syd03w52-resize-webp:260:260.webp",
   price: "59.99€",
   description: "Casual Regular Fit Hooded Sweatshirt & Jogger Pants for Daily Wear, Fall & Winter.",
   tiktokLink: "https://www.tiktok.com/view/product/1729518710852589570"
 }, {
-  id: 111,
+  id: 6,
   name: "Retro Striped Loose Sweater",
   image: "https://p16-oec-eu-common-no.tiktokcdn-eu.com/tos-no1a-i-t5fjg24jzw-no/3a57365881b24b90bb6d98c3e34e11c9~tplv-t5fjg24jzw-resize-webp:260:260.webp",
   price: "49.99€",
@@ -186,7 +195,7 @@ const products: Record<Category, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729544929579408083"
 },
 {
-  id: 112,
+  id: 7,
   name: "2025 Neue ES Doppelnaht Hoodie Set",
   image: "https://p16-oec-eu-common-no.tiktokcdn-eu.com/tos-no1a-i-t5fjg24jzw-no/c5df9a11013649b8abb06b52536297ee~tplv-t5fjg24jzw-resize-webp:260:260.webp",
   price: "59.99€",
@@ -194,13 +203,40 @@ const products: Record<Category, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729546005373557459"
 }, 
 {
-  id: 112,
+  id: 8,
   name: "Stylish Men's 2-Piece Waffle Knit Shorts Set - Summer Sportswear",
   image: "https://p16-oec-eu-common-no.tiktokcdn-eu.com/tos-no1a-i-t5fjg24jzw-no/2c900aa8b7474ab18c2e54f22bffa18a~tplv-t5fjg24jzw-resize-webp:260:260.webp",
   price: "49.99€",
   description: "Comfortable & Fashionable Casual Outfit for Active Lifestyle, perfect for summer sportswear.",
   tiktokLink: "https://www.tiktok.com/view/product/1729527733324651356"
-}
+},
+{
+  id: 8,
+  name: "New York Embroidery Baseball Cap",
+  image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/e9bee29fe10f47ee8f234b5bdef68645~tplv-o3syd03w52-resize-webp:260:260.webp",
+  price: "19.99€",
+  description: "Casual Outdoor Sports Hat for Men & Women, Vintage All-match Sun Hat for Daily Wear.",
+  tiktokLink: "https://www.tiktok.com/view/product/1729480149563644055"
+},
+{
+  id: 9,
+  name: "Men's Fashionable Lace Up Mid Top Sneakers",
+  image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/5391be0ade99480c85aabcc3445d8dad~tplv-o3syd03w52-resize-webp:260:260.webp",
+  price: "49.99€",
+  description: "Casual Comfortable Breathable Sports Running Shoes. Male All-match Chunky Sneakers for Daily Life.",
+  tiktokLink: "https://www.tiktok.com/view/product/1729491822869518959"
+},
+{
+  id: 10,
+  name: "Men's Sporty Lace Up Running Shoes",
+  image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/f11c4a8a09204745afff6b2dce93f448~tplv-o3syd03w52-resize-webp:260:260.webp",
+  price: "54.99€",
+  description: "Casual Comfortable Breathable Hollow Out Air Cushion Sneakers. Fashion Sneakers for Daily Wear.",
+  tiktokLink: "https://www.tiktok.com/view/product/1729480473791535414"
+},
+
+
+
 
 
 
@@ -209,7 +245,7 @@ const products: Record<Category, Product[]> = {
   ],
   femme: [
    {
-  id: 102,
+  id: 1,
   name: "Women's Embroidering Design Pocket Denim Pants",
   image: "https://p16-oec-eu-common-no.tiktokcdn-eu.com/tos-no1a-i-t5fjg24jzw-no/bc030196f6c747019c6adee266abaf9f~tplv-t5fjg24jzw-resize-webp:260:260.webp",
   price: "39.99€",
@@ -217,7 +253,7 @@ const products: Record<Category, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729520822522714812"
 },
 {
-  id: 103,
+  id: 2,
   name: "Women's Cut Out Ripped Wide Leg Jeans",
   image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/21208c5a3cb24425bb43fa95b235aa4f~tplv-o3syd03w52-resize-webp:260:260.webp",
   price: "39.99€",
@@ -225,7 +261,7 @@ const products: Record<Category, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729481800901826808"
 },
 {
-  id: 105,
+  id: 3,
   name: "Two-Piece Women's Jacket & Skirt Set",
   image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/f85538ccc3ba482b84f7f8f3c3786b91~tplv-o3syd03w52-resize-webp:260:260.webp",
   price: "49.99€",
@@ -233,7 +269,7 @@ const products: Record<Category, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729488609782176467"
 },
 {
-  id: 106,
+  id: 4,
   name: "Two-piece Solid Crop Top & Shorts Set",
   image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/2ce52dcc706649ed8bdaa359356e69a6~tplv-o3syd03w52-resize-webp:260:260.webp",
   price: "34.99€",
@@ -241,7 +277,7 @@ const products: Record<Category, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729488923301091956"
 },
 {
-  id: 107,
+  id: 5,
   name: "Women's Ribbed Crop Top & Pants Set",
   image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/092f456f0ae84e289c094940ccb29766~tplv-o3syd03w52-resize-webp:260:260.webp",
   price: "39.99€",
@@ -249,7 +285,7 @@ const products: Record<Category, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729481968261765508"
 },
 {
-  id: 108,
+  id: 6,
   name: "Women's Butterfly Print Tee & Pants Set",
   image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/bcc1bd567a0c419ebafaf08c6a01a6d1~tplv-o3syd03w52-resize-webp:260:260.webp",
   price: "39.99€",
@@ -257,13 +293,64 @@ const products: Record<Category, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729513878777403866"
 },
 {
-  id: 109,
+  id: 7,
   name: "Two-Piece Women's Side Striped Tube Top & Pants",
   image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/b705c8f9465740608bcd5bba52b35b75~tplv-o3syd03w52-resize-webp:260:260.webp",
   price: "39.99€",
   description: "Casual Fashion Cozy Set for Daily Outdoor Wear, All Seasons.",
   tiktokLink: "https://www.tiktok.com/view/product/1729504672829511877"
-}
+},
+{
+  id: 8,
+  name: "Women's All Over Print Tube Dress",
+  image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/6ae6b2e5641748a18d3a480337cbd737~tplv-o3syd03w52-resize-webp:260:260.webp",
+  price: "39.99€",
+  description: "Elegant Fashion Casual Strapless Dress for Daily Outdoor Wear, suitable for all seasons.",
+  tiktokLink: "https://www.tiktok.com/view/product/1729486623767501822"
+},
+{
+  id: 9,
+  name: "Women's All Over Print Tube Dress",
+  image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/6ae6b2e5641748a18d3a480337cbd737~tplv-o3syd03w52-resize-webp:260:260.webp",
+  price: "34.99€",
+  description: "Elegant Fashion Casual Strapless Dress for Daily Outdoor Wear, suitable for all seasons.",
+  tiktokLink: "https://www.tiktok.com/view/product/1729486623767501822"
+},
+{
+  id: 10,
+  name: "Women's 2 Counts Solid Backless Crop Tube Top & High Waist Skirt Set",
+  image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/91271c0a6901434db1cf094ff1b39382~tplv-o3syd03w52-resize-webp:260:260.webp",
+  price: "34.99€",
+  description: "Sleeveless Strapless Top & Bodycon Skirt Set for Party Club Dating, Ladies Summer Clothes.",
+  tiktokLink: "https://www.tiktok.com/view/product/1729485724500400433"
+},
+
+{
+  id: 11,
+  name: "Women's Plain Split Thigh Drawstring Ruched Cami Dress",
+  image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/1fb681f2906648deb284bc072d20c054~tplv-o3syd03w52-resize-webp:260:260.webp",
+  price: "39.99€",
+  description: "Elegant Cut Out Halter Neck Long Dress for Party Club Dating Wear, Ladies Summer Clothes.",
+  tiktokLink: "https://www.tiktok.com/view/product/1729480293721545095"
+},
+{
+  id: 12,
+  name: "Women's Plain Ruched Bodycon Dress",
+  image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/842647616ca4497cb8c7d3e07f824ae9~tplv-o3syd03w52-resize-webp:260:260.webp",
+  price: "29.99€",
+  description: "Elegant Tie Back Wrap Dress for Party, Club & Dating. Ladies Summer Clothes.",
+  tiktokLink: "https://www.tiktok.com/view/product/1729486772865243441"
+},
+{
+  id: 13,
+  name: "Sporty Women's Plain Square Neck Sports Dress",
+  image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/afcc61a172894dc48eef79dccf3d2e54~tplv-o3syd03w52-resize-webp:260:260.webp",
+  price: "34.99€",
+  description: "Sports Sleeveless Skorts Dress for Golf, Tennis, Running. Ladies Sportswear Indoor & Outdoor.",
+  tiktokLink: "https://www.tiktok.com/view/product/1729487716676508507"
+},
+
+
 
 
 
@@ -273,24 +360,69 @@ const products: Record<Category, Product[]> = {
   ],
   outils: [
 {
-  id: 17,
+  id: 1,
   name: "Stanley Quencher H2.0 Becher 2025",
   image: "https://p16-oec-eu-common-no.tiktokcdn-eu.com/tos-no1a-i-t5fjg24jzw-no/35a3196e17b64f7dacf76deb82779c1e~tplv-t5fjg24jzw-resize-webp:260:260.webp",
   price: "39.99€",
   description: "850ml Edelstahl-Isolierbecher mit Griff & Strohhalm, Flowstate Deckel, BPA-frei, ideal für Reisen.",
   tiktokLink: "https://www.tiktok.com/view/product/1729523138086738199"
-}
+},
+{
+  id: 2,
+  name: "USB Rechargeable Selfie Ring Light",
+  image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/a05bc39c437b4db09597df1dc4489f4d~tplv-o3syd03w52-resize-webp:260:260.webp",
+  price: "19.99€",
+  description: "36-LED Selfie Ring Light, Night Selfie Enhancing Light for Phone Photography.",
+  tiktokLink: "https://www.tiktok.com/view/product/1729481045978487174"
+},
+{
+  id: 3,
+  name: "Luminous Metal Laser Sword Toy",
+  image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/6e0fca7091f2433584bec3ca56abe2ff~tplv-o3syd03w52-resize-webp:260:260.webp",
+  price: "24.99€",
+  description: "Color Changing Light Sword Toy with Sound & Light Effects, perfect Valentine's Day Gift.",
+  tiktokLink: "https://www.tiktok.com/view/product/1729512864450320600"
+},
+{
+  id: 4,
+  name: "10000mAh Wireless Fast Charging Power Bank",
+  image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/077a93a7168744dda40c78bf0cf42d95~tplv-o3syd03w52-resize-webp:260:260.webp",
+  price: "59.99€",
+  description: "Portable Magnetic Mobile Power with LED Display, Universal Power Bank for iPhone 15/14/13/12/Pro/Mini/Pro Max, Chargeable.",
+  tiktokLink: "https://www.tiktok.com/view/product/1729529909647809403"
+},
+
+
+
 
   ],
     bijoux: [
     {
-  id: 101,
+  id: 1,
   name: "Rhinestone Decorated Bangle Bracelet",
   image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/70a0cd48f0c24bd39383dd306ec61901~tplv-o3syd03w52-resize-webp:260:260.webp",
   price: "29.99€",
   description: "Fashionable Jewelry for Women & Men for Party, Daily Clothing Decor, Trendy All-match & Exquisite Jewelry for Gift.",
   tiktokLink: "https://www.tiktok.com/view/product/1729480602598546200"
-}
+},
+{
+  id: 2,
+  name: "2024 Summer Rhinestone Decorated Trendy Bangle",
+  image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/61e9736ead154fbf9935a0a5739cbd5e~tplv-o3syd03w52-resize-webp:260:260.webp",
+  price: "29.99€",
+  description: "Elegant Fashion Accessories for Women & Men Daily Wear, Minimalist Aesthetic Jewelry Gift.",
+  tiktokLink: "https://www.tiktok.com/view/product/1729491660882811397"
+},
+{
+  id: 3,
+  name: "4K Video Recording Digital Camera",
+  image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/22fafe92b57d4e5da5a16243beb7fdad~tplv-o3syd03w52-resize-webp:260:260.webp",
+  price: "99.99€",
+  description: "48MP Auto Focus Pixel Digital Camera with 16X Digital Zoom, 32G Memory Card included, perfect for beginners.",
+  tiktokLink: "https://www.tiktok.com/view/product/1729481888520313729"
+},
+
+
 
   ]
 };
