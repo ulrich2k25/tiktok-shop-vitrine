@@ -161,7 +161,50 @@ const products: Record<Category, Product[]> = {
   price: "24.99€",
   description: "Loose Casual Relaxed Fit Breathable Comfortable Shorts for Summer Gym & Basketball.",
   tiktokLink: "https://www.tiktok.com/view/product/1729482769530591485"
+},
+{
+  id: 104,
+  name: "Men's Letter Print Denim Shorts",
+  image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/d6ebee90280d4b85b73e00aa3b2f4d7c~tplv-o3syd03w52-resize-webp:260:260.webp",
+  price: "29.99€",
+  description: "Casual Loose Fit Shorts for Summer, Fashion Men's Bottoms for Daily Wear.",
+  tiktokLink: "https://www.tiktok.com/view/product/1729500909793024819"
+},
+{
+  id: 110,
+  name: "Men's Thermal Lined Side Stripe Hoodie & Pants Set",
+  image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/5132c40825674b24bcfbb910d0d45b9b~tplv-o3syd03w52-resize-webp:260:260.webp",
+  price: "59.99€",
+  description: "Casual Regular Fit Hooded Sweatshirt & Jogger Pants for Daily Wear, Fall & Winter.",
+  tiktokLink: "https://www.tiktok.com/view/product/1729518710852589570"
+}, {
+  id: 111,
+  name: "Retro Striped Loose Sweater",
+  image: "https://p16-oec-eu-common-no.tiktokcdn-eu.com/tos-no1a-i-t5fjg24jzw-no/3a57365881b24b90bb6d98c3e34e11c9~tplv-t5fjg24jzw-resize-webp:260:260.webp",
+  price: "49.99€",
+  description: "American Retro Striped Printed Loose Pullover for Men and Women.",
+  tiktokLink: "https://www.tiktok.com/view/product/1729544929579408083"
+},
+{
+  id: 112,
+  name: "2025 Neue ES Doppelnaht Hoodie Set",
+  image: "https://p16-oec-eu-common-no.tiktokcdn-eu.com/tos-no1a-i-t5fjg24jzw-no/c5df9a11013649b8abb06b52536297ee~tplv-t5fjg24jzw-resize-webp:260:260.webp",
+  price: "59.99€",
+  description: "Lockere Fleece Herren und Damen Hoodie Set 2025, Doppelnaht Design.",
+  tiktokLink: "https://www.tiktok.com/view/product/1729546005373557459"
+}, 
+{
+  id: 112,
+  name: "Stylish Men's 2-Piece Waffle Knit Shorts Set - Summer Sportswear",
+  image: "https://p16-oec-eu-common-no.tiktokcdn-eu.com/tos-no1a-i-t5fjg24jzw-no/2c900aa8b7474ab18c2e54f22bffa18a~tplv-t5fjg24jzw-resize-webp:260:260.webp",
+  price: "49.99€",
+  description: "Comfortable & Fashionable Casual Outfit for Active Lifestyle, perfect for summer sportswear.",
+  tiktokLink: "https://www.tiktok.com/view/product/1729527733324651356"
 }
+
+
+
+
 
   ],
   femme: [
@@ -180,7 +223,52 @@ const products: Record<Category, Product[]> = {
   price: "39.99€",
   description: "Fashion Casual High Waist Straight Leg Distressed Denim Pants for Daily Outdoor Wear, All Seasons.",
   tiktokLink: "https://www.tiktok.com/view/product/1729481800901826808"
+},
+{
+  id: 105,
+  name: "Two-Piece Women's Jacket & Skirt Set",
+  image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/f85538ccc3ba482b84f7f8f3c3786b91~tplv-o3syd03w52-resize-webp:260:260.webp",
+  price: "49.99€",
+  description: "Letter Embroidery Button Front Jacket & PU Skirt, Casual Fashion for Daily Wear, All Seasons.",
+  tiktokLink: "https://www.tiktok.com/view/product/1729488609782176467"
+},
+{
+  id: 106,
+  name: "Two-piece Solid Crop Top & Shorts Set",
+  image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/2ce52dcc706649ed8bdaa359356e69a6~tplv-o3syd03w52-resize-webp:260:260.webp",
+  price: "34.99€",
+  description: "Solid Button Front Crop Top & Shorts Set, Casual Fashion for Summer Daily Wear.",
+  tiktokLink: "https://www.tiktok.com/view/product/1729488923301091956"
+},
+{
+  id: 107,
+  name: "Women's Ribbed Crop Top & Pants Set",
+  image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/092f456f0ae84e289c094940ccb29766~tplv-o3syd03w52-resize-webp:260:260.webp",
+  price: "39.99€",
+  description: "Solid Ribbed Ruched Drawstring Crop Tank Top & High Waist Pants Set for Daily Wear.",
+  tiktokLink: "https://www.tiktok.com/view/product/1729481968261765508"
+},
+{
+  id: 108,
+  name: "Women's Butterfly Print Tee & Pants Set",
+  image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/bcc1bd567a0c419ebafaf08c6a01a6d1~tplv-o3syd03w52-resize-webp:260:260.webp",
+  price: "39.99€",
+  description: "Casual Round Neck Short Sleeve T-shirt & Trousers for Daily Wear.",
+  tiktokLink: "https://www.tiktok.com/view/product/1729513878777403866"
+},
+{
+  id: 109,
+  name: "Two-Piece Women's Side Striped Tube Top & Pants",
+  image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/b705c8f9465740608bcd5bba52b35b75~tplv-o3syd03w52-resize-webp:260:260.webp",
+  price: "39.99€",
+  description: "Casual Fashion Cozy Set for Daily Outdoor Wear, All Seasons.",
+  tiktokLink: "https://www.tiktok.com/view/product/1729504672829511877"
 }
+
+
+
+
+
 
   ],
   outils: [
