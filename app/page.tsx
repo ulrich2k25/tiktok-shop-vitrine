@@ -308,14 +308,7 @@ const products: Record<Category, Product[]> = {
   description: "Elegant Fashion Casual Strapless Dress for Daily Outdoor Wear, suitable for all seasons.",
   tiktokLink: "https://www.tiktok.com/view/product/1729486623767501822"
 },
-{
-  id: 9,
-  name: "Women's All Over Print Tube Dress",
-  image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/6ae6b2e5641748a18d3a480337cbd737~tplv-o3syd03w52-resize-webp:260:260.webp",
-  price: "34.99€",
-  description: "Elegant Fashion Casual Strapless Dress for Daily Outdoor Wear, suitable for all seasons.",
-  tiktokLink: "https://www.tiktok.com/view/product/1729486623767501822"
-},
+
 {
   id: 10,
   name: "Women's 2 Counts Solid Backless Crop Tube Top & High Waist Skirt Set",
@@ -391,7 +384,14 @@ const products: Record<Category, Product[]> = {
   description: "Portable Magnetic Mobile Power with LED Display, Universal Power Bank for iPhone 15/14/13/12/Pro/Mini/Pro Max, Chargeable.",
   tiktokLink: "https://www.tiktok.com/view/product/1729529909647809403"
 },
-
+{
+  id: 5,
+  name: "4K Video Recording Digital Camera",
+  image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/22fafe92b57d4e5da5a16243beb7fdad~tplv-o3syd03w52-resize-webp:260:260.webp",
+  price: "99.99€",
+  description: "48MP Auto Focus Pixel Digital Camera with 16X Digital Zoom, 32G Memory Card included, perfect for beginners.",
+  tiktokLink: "https://www.tiktok.com/view/product/1729481888520313729"
+},
 
 
 
@@ -412,14 +412,6 @@ const products: Record<Category, Product[]> = {
   price: "29.99€",
   description: "Elegant Fashion Accessories for Women & Men Daily Wear, Minimalist Aesthetic Jewelry Gift.",
   tiktokLink: "https://www.tiktok.com/view/product/1729491660882811397"
-},
-{
-  id: 3,
-  name: "4K Video Recording Digital Camera",
-  image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/22fafe92b57d4e5da5a16243beb7fdad~tplv-o3syd03w52-resize-webp:260:260.webp",
-  price: "99.99€",
-  description: "48MP Auto Focus Pixel Digital Camera with 16X Digital Zoom, 32G Memory Card included, perfect for beginners.",
-  tiktokLink: "https://www.tiktok.com/view/product/1729481888520313729"
 },
 
 
