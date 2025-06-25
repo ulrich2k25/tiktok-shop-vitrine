@@ -234,6 +234,23 @@ const products: Record<Category, Product[]> = {
   description: "Casual Comfortable Breathable Hollow Out Air Cushion Sneakers. Fashion Sneakers for Daily Wear.",
   tiktokLink: "https://www.tiktok.com/view/product/1729480473791535414"
 },
+{
+  id: 12,
+  name: "2025 American Casual Jogging Set with Zipper & Hoodie",
+  image: "https://p16-oec-eu-common-no.tiktokcdn-eu.com/tos-no1a-i-t5fjg24jzw-no/06fb84d4b27146e083be5f8fff3c1f23~tplv-t5fjg24jzw-resize-webp:260:260.webp",
+  price: "18,89 €", 
+  description: "Zweiteilige Y2K Streetwear mit Stickerei – Hip-Hop Freizeitanzug für Herren (Jogginghose + Kapuzenjacke).",
+  tiktokLink: "https://www.tiktok.com/view/product/1729519345784101861"
+},
+{
+  id: 18,
+  name: "Nike Air Force 1 Sneakers for Women",
+  image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/24aba51afe4344b9b507522ab4f5e964~tplv-o3syd03w52-resize-webp:260:260.webp",
+  price: "89.99€",
+  description: "Classic Nike Air Force 1 DD8959 – Comfortable, stylish sneakers perfect for everyday wear. Timeless design for women.",
+  tiktokLink: "https://www.tiktok.com/view/product/1729545254344366942"
+},
+
 
 
 
@@ -342,6 +359,58 @@ const products: Record<Category, Product[]> = {
   description: "Sports Sleeveless Skorts Dress for Golf, Tennis, Running. Ladies Sportswear Indoor & Outdoor.",
   tiktokLink: "https://www.tiktok.com/view/product/1729487716676508507"
 },
+{
+  id: 14,
+  name: "Women's 3 Counts Solid Backless Sports Vest",
+  image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/17f2043583ab429eac417c87c0be14bd~tplv-o3syd03w52-resize-webp:260:260.webp",
+  price: "8,55€", 
+  description: "Adjustable Strap Seamless Workout Athletic Cami Top, Ladies Sportswear for Indoor Outdoor Wear.",
+  tiktokLink: "https://www.tiktok.com/view/product/1729497281839799291"
+},
+{
+  id: 13,
+  name: "Women's Crop Halter Top & Wide Leg Pants Set",
+  image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/eeec88b5a49441bc8c429561d8f8031c~tplv-o3syd03w52-resize-webp:260:260.webp",
+  price: "15,86€",
+  description: "Casual & comfy two-piece outfit for daily outdoor wear. Fashionable ladies set for all seasons.",
+  tiktokLink: "https://www.tiktok.com/view/product/1729498020764293590"
+},
+{
+  id: 14,
+  name: "Schlappen Susa Gold",
+  image: "https://p16-oec-eu-common-useast2a.ibyteimg.com/tos-useast2a-i-tulkllf4y5-euttp/94038b344c4c4eb4af83323f1b0654ca~tplv-tulkllf4y5-resize-webp:260:260.webp",
+  price: "19.99€",
+  description: "Stylish golden slippers – lightweight, elegant and perfect for indoor & casual summer wear.",
+  tiktokLink: "https://www.tiktok.com/view/product/1729449671511152910"
+},
+{
+  id: 15,
+  name: "Louis Vuitton - Pool Kissenrutsche (Schwarz)",
+  image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/eb13aedae52441429691853a3ef4fd10~tplv-o3syd03w52-resize-webp:260:260.webp",
+  price: "49.99€",
+  description: "Luxe schwarze Pool-Slides von Louis Vuitton – stylisch, bequem und perfekt für Sommer oder Zuhause.",
+  tiktokLink: "https://www.tiktok.com/view/product/1729523892031363469"
+},
+{
+  id: 16,
+  name: "Women's Fashionable Slide Sandals",
+  image: "https://p16-oec-eu-common-no.tiktokcdn-eu.com/tos-no1a-i-t5fjg24jzw-no/adad337d5ee448c1b37f6e86e6df0db2~tplv-t5fjg24jzw-resize-webp:260:260.webp",
+  price: "19.99€",
+  description: "Casual flat sandals for beach vacation or everyday wear – comfortable, stylish, and easy to match.",
+  tiktokLink: "https://www.tiktok.com/view/product/1729515688113904471"
+},
+{
+  id: 17,
+  name: "Women's Solid Tube Top & Wide Leg Pants Set",
+  image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/eeb36cc4dc4d464d94e1b435cf5a6b24~tplv-o3syd03w52-resize-webp:260:260.webp",
+  price: "29.99€",
+  description: "Casual and comfortable two-piece summer outfit with a tube top and wide leg pants – perfect for daily or outdoor wear.",
+  tiktokLink: "https://www.tiktok.com/view/product/1729492317840840719"
+},
+
+
+
+
 
 
 
