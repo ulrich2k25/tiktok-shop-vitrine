@@ -1,26 +1,35 @@
 {
   "fr": {
+    "tous": "Tous",
     "sport": "Sport",
-    "homme": "Homme",
-    "femme": "Femme",
+    "mode homme": "Mode Homme",
+    "mode femme": "Mode Femme",
     "outils": "Outils",
     "bijoux": "Bijoux",
-    "acheter": "Acheter sur TikTok"
+    "beaute": "Beauté",
+    "acheter": "Acheter sur TikTok",
+    "rechercher": "Rechercher un produit..."
   },
   "en": {
+    "tous": "All",
     "sport": "Sport",
-    "homme": "Men",
-    "femme": "Women",
+    "mode homme": "Men's Fashion",
+    "mode femme": "Women's Fashion",
     "outils": "Tools",
     "bijoux": "Jewelry",
-    "acheter": "Buy on TikTok"
+    "beaute": "Beauty",
+    "acheter": "Buy on TikTok",
+    "rechercher": "Search for a product..."
   },
   "de": {
+    "tous": "Alle",
     "sport": "Sport",
-    "homme": "Herren",
-    "femme": "Damen",
+    "mode homme": "Herrenmode",
+    "mode femme": "Damenmode",
     "outils": "Werkzeuge",
     "bijoux": "Schmuck",
-    "acheter": "Auf TikTok kaufen"
+    "beaute": "Schönheit",
+    "acheter": "Auf TikTok kaufen",
+    "rechercher": "Produkt suchen..."
   }
 }

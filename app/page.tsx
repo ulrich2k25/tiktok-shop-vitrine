@@ -16,9 +16,10 @@ type Product = {
   link?: string;
 };
 
-type Category = 'sport' | 'homme' | 'femme' | 'outils' | 'bijoux';
+type Category = 'tous' | 'sport' | 'mode homme' | 'mode femme' | 'outils' | 'bijoux' | 'beaute';
 
-const products: Record<Category, Product[]> = {
+const products: Record<Exclude<Category, 'tous'>, Product[]> = {
+
   sport: [
      {
     id: 1,
@@ -146,7 +147,7 @@ const products: Record<Category, Product[]> = {
 
 
   ],
-  homme: [
+  mode homme: [
     {
   id: 1,
   name: "Men's Letter Print Round Neck Tee",
@@ -260,7 +261,7 @@ const products: Record<Category, Product[]> = {
 
 
   ],
-  femme: [
+  mode femme: [
    {
   id: 1,
   name: "Women's Embroidering Design Pocket Denim Pants",
@@ -485,16 +486,28 @@ const products: Record<Category, Product[]> = {
 
 
 
-  ]
+  ],
+  	  beaute: [
+{
+  id: 1,
+  name: "Stanley Quencher H2.0 Becher 2025",
+  image: "https://p16-oec-eu-common-no.tiktokcdn-eu.com/tos-no1a-i-t5fjg24jzw-no/35a3196e17b64f7dacf76deb82779c1e~tplv-t5fjg24jzw-resize-webp:260:260.webp",
+  price: "39.99€",
+  description: "850ml Edelstahl-Isolierbecher mit Griff & Strohhalm, Flowstate Deckel, BPA-frei, ideal für Reisen.",
+  tiktokLink: "https://www.tiktok.com/view/product/1729523138086738199"
+},
+
+  ],
 };
 
 // Pagination
 const ITEMS_PER_PAGE = 20;
 
 export default function Home() {
-  const [selectedCategory, setSelectedCategory] = useState<Category>('sport');
+  const [selectedCategory, setSelectedCategory] = useState<Category>('tous');
   const [currentPage, setCurrentPage] = useState<number>(1);
   const [locale, setLocale] = useState<'fr' | 'en' | 'de'>('fr');
+  const [searchTerm, setSearchTerm] = useState('');
 
   useEffect(() => {
     const lang = navigator.language.slice(0, 2);
@@ -508,16 +521,27 @@ export default function Home() {
     const categoryParam = urlParams.get('category') as Category;
     const pageParam = parseInt(urlParams.get('page') || '1', 10);
 
-    if (categoryParam && ['sport', 'homme', 'femme', 'outils', 'bijoux'].includes(categoryParam)) {
+    if (categoryParam && ['tous', 'sport', 'mode homme', 'mode femme', 'outils', 'bijoux', 'beaute'].includes(categoryParam)) {
       setSelectedCategory(categoryParam);
     }
     setCurrentPage(pageParam >= 1 ? pageParam : 1);
   }, []);
 
   const t = (key: string) => (translations[locale] as Record<string, string>)[key] || key;
-  const allProducts = products[selectedCategory];
-  const totalPages = Math.ceil(allProducts.length / ITEMS_PER_PAGE);
-  const displayedProducts = allProducts.slice(
+
+  const allProducts =
+    selectedCategory === 'tous'
+      ? Object.values(products).flat().sort(() => Math.random() - 0.5)
+      : products[selectedCategory as Exclude<Category, 'tous'>];
+
+  const filteredProducts = allProducts.filter(
+    (product) =>
+      product.name?.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      product.description.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
+  const totalPages = Math.ceil(filteredProducts.length / ITEMS_PER_PAGE);
+  const displayedProducts = filteredProducts.slice(
     (currentPage - 1) * ITEMS_PER_PAGE,
     currentPage * ITEMS_PER_PAGE
   );
@@ -532,9 +556,18 @@ export default function Home() {
   return (
     <>
       <main className="p-4 sm:p-6 md:p-8">
-        {/* Navigation des catégories */}
+        <div className="flex justify-center mb-4">
+          <input
+            type="text"
+            placeholder={t('rechercher')}
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+            className="w-full max-w-md px-4 py-2 border rounded-full text-black focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+        </div>
+
         <nav className="flex flex-wrap justify-center gap-3 my-6">
-          {(['sport', 'homme', 'femme', 'outils', 'bijoux'] as Category[]).map((cat: Category) => (
+          {(['tous', 'sport', 'mode homme', 'mode femme', 'outils', 'bijoux', 'beaute'] as Category[]).map((cat: Category) => (
             <button
               key={cat}
               onClick={() => {
