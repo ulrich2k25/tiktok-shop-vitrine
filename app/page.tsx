@@ -1,3 +1,6 @@
+'use client';
+
+
 import { useEffect, useState } from 'react';
 import { products, Product } from './data/products';
 import translations from './locales/translations';
