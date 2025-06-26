@@ -518,19 +518,21 @@ export default function Home() {
 
   const t = (key: string) => (translations[locale] as Record<string, string>)[key] || key;
 
- const allProducts = (() => {
-  if (selectedCategory === 'tous') {
-    return shuffleArray(Object.values(products).flat());
-  }
+  const allProducts = (() => {
+    if (selectedCategory === 'tous') {
+      return shuffleArray(Object.values(products).flat());
+    }
+    if (Object.keys(products).includes(selectedCategory)) {
+      return products[selectedCategory];
+    }
+    return [];
+  })();
 
-  // Vérifie si la clé existe bien dans products
-  if (Object.keys(products).includes(selectedCategory)) {
-    return products[selectedCategory];
-  }
-
-  return [];
-})();
-
+  const filteredProducts = allProducts.filter(
+    (product) =>
+      product.name?.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      product.description.toLowerCase().includes(searchTerm.toLowerCase())
+  );
 
   const totalPages = Math.ceil(filteredProducts.length / ITEMS_PER_PAGE);
   const displayedProducts = filteredProducts.slice(
