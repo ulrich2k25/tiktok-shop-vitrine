@@ -4,13 +4,13 @@ import React, { useState, useEffect } from 'react';
 import translations from './locales/translations.json';
 import { products, Product, Category } from './data/products';
 
-
 // Pagination
 const ITEMS_PER_PAGE = 20;
 
 export default function Home() {
   const [selectedCategory, setSelectedCategory] = useState<Category>('sport');
   const [currentPage, setCurrentPage] = useState<number>(1);
+  const [searchTerm, setSearchTerm] = useState('');
   const [locale, setLocale] = useState<'fr' | 'en' | 'de'>('fr');
 
   useEffect(() => {
@@ -32,9 +32,17 @@ export default function Home() {
   }, []);
 
   const t = (key: string) => (translations[locale] as Record<string, string>)[key] || key;
-  const allProducts = products[selectedCategory];
-  const totalPages = Math.ceil(allProducts.length / ITEMS_PER_PAGE);
-  const displayedProducts = allProducts.slice(
+
+  const allProducts = products[selectedCategory] || [];
+
+  const filteredProducts = allProducts.filter(
+    (product) =>
+      product.name?.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      product.description.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
+  const totalPages = Math.ceil(filteredProducts.length / ITEMS_PER_PAGE);
+  const displayedProducts = filteredProducts.slice(
     (currentPage - 1) * ITEMS_PER_PAGE,
     currentPage * ITEMS_PER_PAGE
   );
@@ -49,6 +57,18 @@ export default function Home() {
   return (
     <>
       <main className="p-4 sm:p-6 md:p-8">
+
+        {/* Barre de recherche */}
+        <div className="flex justify-center mb-4">
+          <input
+            type="text"
+            placeholder={t('rechercher')}
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+            className="w-full max-w-md px-4 py-2 border rounded-full text-black focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+        </div>
+
         {/* Navigation des catégories */}
         <nav className="flex flex-wrap justify-center gap-3 my-6">
           {(['sport', 'homme_mode', 'femme_mode', 'outils', 'bijoux', 'beaute'] as Category[]).map((cat: Category) => (
@@ -73,6 +93,7 @@ export default function Home() {
           ))}
         </nav>
 
+        {/* Grille des produits */}
         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
           {displayedProducts.map((product: Product) => (
             <div
@@ -101,6 +122,7 @@ export default function Home() {
           ))}
         </div>
 
+        {/* Pagination */}
         {totalPages > 1 && (
           <div className="flex justify-center mt-8 space-x-2">
             {[...Array(totalPages)].map((_, index) => {
