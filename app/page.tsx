@@ -8,7 +8,7 @@ import { products, Product, Category } from './data/products';
 const ITEMS_PER_PAGE = 20;
 
 export default function Home() {
-  const [selectedCategory, setSelectedCategory] = useState<Category>('sport');
+  const [selectedCategory, setSelectedCategory] = useState<Category>('tous');
   const [currentPage, setCurrentPage] = useState<number>(1);
   const [searchTerm, setSearchTerm] = useState('');
   const [locale, setLocale] = useState<'fr' | 'en' | 'de'>('fr');
@@ -25,7 +25,7 @@ export default function Home() {
     const categoryParam = urlParams.get('category') as Category;
     const pageParam = parseInt(urlParams.get('page') || '1', 10);
 
-    if (categoryParam && ['sport', 'homme_mode', 'femme_mode', 'outils', 'bijoux', 'beaute'].includes(categoryParam)) {
+    if (categoryParam && ['tous','sport', 'homme_mode', 'femme_mode', 'outils', 'bijoux', 'beaute'].includes(categoryParam)) {
       setSelectedCategory(categoryParam);
     }
     setCurrentPage(pageParam >= 1 ? pageParam : 1);
@@ -33,7 +33,12 @@ export default function Home() {
 
   const t = (key: string) => (translations[locale] as Record<string, string>)[key] || key;
 
-  const allProducts = products[selectedCategory] || [];
+//afficher tous les produits 
+  const allProducts =
+  selectedCategory === 'tous'
+    ? Object.values(products).flat()
+    : products[selectedCategory] || [];
+
 
   const filteredProducts = allProducts.filter(
     (product) =>
