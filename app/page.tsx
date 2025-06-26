@@ -482,7 +482,6 @@ const products: Record<Exclude<Category, 'tous'>, Product[]> = {
   ]
 };
 
-
 function shuffleArray<T>(array: T[]): T[] {
   return [...array].sort(() => Math.random() - 0.5);
 }
@@ -491,8 +490,19 @@ function shuffleArray<T>(array: T[]): T[] {
 const ITEMS_PER_PAGE = 20;
 
 export default function Home() {
-  const [selectedCategory, setSelectedCategory] = useState<Category>('tous');
-  const [currentPage, setCurrentPage] = useState<number>(1);
+  const [selectedCategory, setSelectedCategory] = useState<Category>(() => {
+    const params = new URLSearchParams(window.location.search);
+    const category = params.get('category') as Category;
+    const valid: Category[] = ['tous', 'sport', 'homme_mode', 'femme_mode', 'outils', 'bijoux', 'beaute'];
+    return valid.includes(category) ? category : 'tous';
+  });
+
+  const [currentPage, setCurrentPage] = useState<number>(() => {
+    const params = new URLSearchParams(window.location.search);
+    const page = parseInt(params.get('page') || '1', 10);
+    return page >= 1 ? page : 1;
+  });
+
   const [locale, setLocale] = useState<'fr' | 'en' | 'de'>('fr');
   const [searchTerm, setSearchTerm] = useState('');
 
@@ -501,32 +511,13 @@ export default function Home() {
     if (lang === 'de' || lang === 'en' || lang === 'fr') {
       setLocale(lang as 'fr' | 'en' | 'de');
     }
-
-    const urlParams = new URLSearchParams(window.location.search);
-    const categoryParam = urlParams.get('category') as Category;
-    const validCategories: Category[] = ['tous', 'sport', 'homme_mode', 'femme_mode', 'outils', 'bijoux', 'beaute'];
-
-    if (categoryParam && validCategories.includes(categoryParam)) {
-      setSelectedCategory(categoryParam);
-    } else {
-      setSelectedCategory('tous');
-    }
-
-    const pageParam = parseInt(urlParams.get('page') || '1', 10);
-    setCurrentPage(pageParam >= 1 ? pageParam : 1);
   }, []);
 
   const t = (key: string) => (translations[locale] as Record<string, string>)[key] || key;
 
-  const allProducts = (() => {
-    if (selectedCategory === 'tous') {
-      return shuffleArray(Object.values(products).flat());
-    }
-    if (Object.keys(products).includes(selectedCategory)) {
-      return products[selectedCategory];
-    }
-    return [];
-  })();
+  const allProducts = selectedCategory === 'tous'
+    ? shuffleArray(Object.values(products).flat())
+    : products[selectedCategory as keyof typeof products] || [];
 
   const filteredProducts = allProducts.filter(
     (product) =>
