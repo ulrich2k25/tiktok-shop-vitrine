@@ -145,9 +145,8 @@ const products: Record<Exclude<Category, 'tous'>, Product[]> = {
   description: "Rapid Jump Skipping Ropes for Aerobic Exercise Speed Training & Jumping Training Accessories.",
   tiktokLink: "https://www.tiktok.com/view/product/1729480320958830962"
 },
+],
 
-
-  ],
   homme_mode: [
     {
   id: 1,
@@ -253,15 +252,8 @@ const products: Record<Exclude<Category, 'tous'>, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729545254344366942"
 },
 
-
-
-
-
-
-
-
-
-  ],
+ ],
+ 
   femme_mode: [
    {
   id: 1,
@@ -410,18 +402,8 @@ const products: Record<Exclude<Category, 'tous'>, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729492317840840719"
 },
 
-
-
-
-
-
-
-
-
-
-
-
-  ],
+ ],
+ 
   outils: [
 {
   id: 1,
@@ -467,6 +449,7 @@ const products: Record<Exclude<Category, 'tous'>, Product[]> = {
 
 
   ],
+  
     bijoux: [
     {
   id: 1,
@@ -484,10 +467,8 @@ const products: Record<Exclude<Category, 'tous'>, Product[]> = {
   description: "Elegant Fashion Accessories for Women & Men Daily Wear, Minimalist Aesthetic Jewelry Gift.",
   tiktokLink: "https://www.tiktok.com/view/product/1729491660882811397"
 },
+],
 
-
-
-  ],
   	  beaute: [
 {
   id: 1,
@@ -537,16 +518,19 @@ export default function Home() {
 
   const t = (key: string) => (translations[locale] as Record<string, string>)[key] || key;
 
-  const allProducts =
-    selectedCategory === 'tous'
-      ? shuffleArray(Object.values(products).flat())
-      : products[selectedCategory] || [];
+ const allProducts = (() => {
+  if (selectedCategory === 'tous') {
+    return shuffleArray(Object.values(products).flat());
+  }
 
-  const filteredProducts = allProducts.filter(
-    (product) =>
-      product.name?.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      product.description.toLowerCase().includes(searchTerm.toLowerCase())
-  );
+  // Vérifie si la clé existe bien dans products
+  if (Object.keys(products).includes(selectedCategory)) {
+    return products[selectedCategory];
+  }
+
+  return [];
+})();
+
 
   const totalPages = Math.ceil(filteredProducts.length / ITEMS_PER_PAGE);
   const displayedProducts = filteredProducts.slice(
