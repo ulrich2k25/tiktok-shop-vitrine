@@ -74,9 +74,9 @@ export default function Home() {
           />
         </div>
 
-        {/* Navigation des catégories */}
+        {/* Navigation des catégories  et affichage des categories */}
         <nav className="flex flex-wrap justify-center gap-3 my-6">
-          {(['sport', 'homme_mode', 'femme_mode', 'outils', 'bijoux', 'beaute'] as Category[]).map((cat: Category) => (
+          {(['tous','sport', 'homme_mode', 'femme_mode', 'outils', 'bijoux', 'beaute'] as Category[]).map((cat: Category) => (
             <button
               key={cat}
               onClick={() => {
