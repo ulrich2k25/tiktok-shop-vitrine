@@ -484,6 +484,10 @@ const products: Record<Exclude<Category, 'tous'>, Product[]> = {
 
 const ITEMS_PER_PAGE = 20;
 
+function shuffleArray<T>(array: T[]): T[] {
+  return [...array].sort(() => Math.random() - 0.5);
+}
+
 export default function Home() {
   const [selectedCategory, setSelectedCategory] = useState<Category>('tous');
   const [currentPage, setCurrentPage] = useState<number>(1);
