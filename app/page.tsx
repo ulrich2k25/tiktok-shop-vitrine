@@ -8,7 +8,7 @@ import { products, Product, Category } from './data/products';
 const ITEMS_PER_PAGE = 20;
 
 export default function Home() {
-  const [selectedCategory, setSelectedCategory] = useState<Category>('tous');
+  const [selectedCategory, setSelectedCategory] = useState<Category>('tous_produits');
   const [currentPage, setCurrentPage] = useState<number>(1);
   const [searchTerm, setSearchTerm] = useState('');
   const [locale, setLocale] = useState<'fr' | 'en' | 'de'>('fr');
@@ -25,7 +25,7 @@ export default function Home() {
     const categoryParam = urlParams.get('category') as Category;
     const pageParam = parseInt(urlParams.get('page') || '1', 10);
 
-    if (categoryParam && ['tous','sport', 'homme_mode', 'femme_mode', 'outils', 'bijoux', 'beaute'].includes(categoryParam)) {
+    if (categoryParam && ['tous_produits','sport', 'homme_mode', 'femme_mode', 'outils', 'bijoux', 'beaute'].includes(categoryParam)) {
       setSelectedCategory(categoryParam);
     }
     setCurrentPage(pageParam >= 1 ? pageParam : 1);
@@ -35,7 +35,7 @@ export default function Home() {
 
 //afficher tous les produits 
   const allProducts =
-  selectedCategory === 'tous'
+  selectedCategory === 'tous_produits'
     ? Object.values(products).flat()
     : products[selectedCategory] || [];
 
@@ -76,7 +76,7 @@ export default function Home() {
 
         {/* Navigation des catégories  et affichage des categories */}
         <nav className="flex flex-wrap justify-center gap-3 my-6">
-          {(['tous','sport', 'homme_mode', 'femme_mode', 'outils', 'bijoux', 'beaute'] as Category[]).map((cat: Category) => (
+          {(['tous_produits','sport', 'homme_mode', 'femme_mode', 'outils', 'bijoux', 'beaute'] as Category[]).map((cat: Category) => (
             <button
               key={cat}
               onClick={() => {

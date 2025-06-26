@@ -9,10 +9,10 @@ export type Product = {
   link?: string;
 };
 
-export type Category = 'tous' |'sport' | 'homme_mode' | 'femme_mode' | 'outils' | 'bijoux' | 'beaute';
+export type Category = 'tous_produits' |'sport' | 'homme_mode' | 'femme_mode' | 'outils' | 'bijoux' | 'beaute';
 
 export const products: Record<string, Product[]> = {
-  tous: [], // Cette catégorie peut rester vide ou être générée dynamiquement
+  tous_produits: [], // Cette catégorie peut rester vide ou être générée dynamiquement
 
  sport: [
      {
@@ -464,13 +464,22 @@ export const products: Record<string, Product[]> = {
 
   	  beaute: [
 {
-  id: 1,
-  name: "Stanley Quencher H2.0 Becher 2025",
-  image: "https://p16-oec-eu-common-no.tiktokcdn-eu.com/tos-no1a-i-t5fjg24jzw-no/35a3196e17b64f7dacf76deb82779c1e~tplv-t5fjg24jzw-resize-webp:260:260.webp",
-  price: "39.99€",
-  description: "850ml Edelstahl-Isolierbecher mit Griff & Strohhalm, Flowstate Deckel, BPA-frei, ideal für Reisen.",
-  tiktokLink: "https://www.tiktok.com/view/product/1729523138086738199"
+  id: 1, 
+  name: "Snowolf - Teddybär (110cm, 120cm, 140cm)",
+  image: "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/24654632d60642fc9ff8e9848f571500~tplv-aphluv4xwc-resize-webp:260:260.webp",
+  price: "29.99€",
+  description: "Riesiger Teddybär, perfektes Geschenk für Kinder, Freundin, Weihnachten, Valentinstag, Geburtstag.",
+  tiktokLink: "https://www.tiktok.com/view/product/1729509047093599085"
 },
+{
+  id: 2,
+  name: "Mini-Rosen-Teddybär",
+  image: "https://p16-oec-eu-common-no.tiktokcdn-eu.com/tos-no1a-i-t5fjg24jzw-no/a4d1a992d86f4deb92b0f007f5b60617~tplv-t5fjg24jzw-resize-webp:260:260.webp",
+  price: "14.99€",
+  description: "Bezaubernder Mini-Rosen-Teddybär – Romantisches Geschenk für Valentinstag, Muttertag, Geburtstag oder Weihnachten.",
+  tiktokLink: "https://www.tiktok.com/view/product/1729543362580159065"
+},
+
 
   ],
 };

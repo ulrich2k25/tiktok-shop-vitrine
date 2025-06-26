@@ -1,6 +1,6 @@
 {
   "fr": {
-    "tous": "Tous",
+    "tous_produits": "Tous produits",
     "sport": "Sport",
     "homme_mode": "Mode Homme",
     "femme_mode": "Mode Femme",
@@ -11,7 +11,7 @@
     "rechercher": "Rechercher un produit..."
   },
   "en": {
-    "tous": "All",
+    "tous_produits": "All Products",
     "sport": "Sport",
     "homme_mode": "Men Fashion",
     "femme_mode": "Women Fashion",
@@ -22,7 +22,7 @@
     "rechercher": "Search a product..."
   },
   "de": {
-    "tous": "Alle",
+    "tous_produits": "Alle Produkte",
     "sport": "Sport",
     "homme_mode": "Mode Herren",
     "femme_mode": "Mode Damen",
