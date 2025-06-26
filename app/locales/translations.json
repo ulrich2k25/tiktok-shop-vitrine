@@ -2,8 +2,8 @@
   "fr": {
     "tous": "Tous",
     "sport": "Sport",
-    "mode homme": "Mode Homme",
-    "mode femme": "Mode Femme",
+    "homme_mode": "Mode Homme",
+    "femme_mode": "Mode Femme",
     "outils": "Outils",
     "bijoux": "Bijoux",
     "beaute": "Beauté",
@@ -13,19 +13,19 @@
   "en": {
     "tous": "All",
     "sport": "Sport",
-    "mode homme": "Men's Fashion",
-    "mode femme": "Women's Fashion",
+    "homme_mode": "Men Fashion",
+    "femme_mode": "Women Fashion",
     "outils": "Tools",
     "bijoux": "Jewelry",
     "beaute": "Beauty",
     "acheter": "Buy on TikTok",
-    "rechercher": "Search for a product..."
+    "rechercher": "Search a product..."
   },
   "de": {
     "tous": "Alle",
     "sport": "Sport",
-    "mode homme": "Herrenmode",
-    "mode femme": "Damenmode",
+    "homme_mode": "Mode Herren",
+    "femme_mode": "Mode Damen",
     "outils": "Werkzeuge",
     "bijoux": "Schmuck",
     "beaute": "Schönheit",

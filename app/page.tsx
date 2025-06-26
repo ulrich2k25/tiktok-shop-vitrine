@@ -16,7 +16,8 @@ type Product = {
   link?: string;
 };
 
-type Category = 'tous' | 'sport' | 'mode homme' | 'mode femme' | 'outils' | 'bijoux' | 'beaute';
+type Category = 'tous' | 'sport' | 'homme_mode' | 'femme_mode' | 'outils' | 'bijoux' | 'beaute';
+
 
 const products: Record<Exclude<Category, 'tous'>, Product[]> = {
 
@@ -147,7 +148,7 @@ const products: Record<Exclude<Category, 'tous'>, Product[]> = {
 
 
   ],
-  mode homme: [
+  homme_mode: [
     {
   id: 1,
   name: "Men's Letter Print Round Neck Tee",
@@ -261,7 +262,7 @@ const products: Record<Exclude<Category, 'tous'>, Product[]> = {
 
 
   ],
-  mode femme: [
+  femme_mode: [
    {
   id: 1,
   name: "Women's Embroidering Design Pocket Denim Pants",
@@ -497,7 +498,7 @@ const products: Record<Exclude<Category, 'tous'>, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729523138086738199"
 },
 
-  ],
+  ]
 };
 
 // Pagination
