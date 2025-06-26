@@ -9,6 +9,7 @@ export type Product = {
   link?: string;
 };
 
+export type Category = 'sport' | 'homme_mode' | 'femme_mode' | 'outils' | 'bijoux' | 'beaute';
 
 export const products: Record<string, Product[]> = {
   tous: [], // Cette catégorie peut rester vide ou être générée dynamiquement
