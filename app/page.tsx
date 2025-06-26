@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
-import { products, Product } from '@/data/products';
-import translations from '@/data/translations';
+import { products, Product } from './data/products';
+import translations from './locales/translations';
+
+
 
 // Pagination
 const ITEMS_PER_PAGE = 20;
