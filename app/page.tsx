@@ -496,10 +496,13 @@ const products: Record<Exclude<Category, 'tous'>, Product[]> = {
   price: "39.99€",
   description: "850ml Edelstahl-Isolierbecher mit Griff & Strohhalm, Flowstate Deckel, BPA-frei, ideal für Reisen.",
   tiktokLink: "https://www.tiktok.com/view/product/1729523138086738199"
-},
+}
 
   ]
 };
+function shuffleArray<T>(array: T[]): T[] {
+  return [...array].sort(() => Math.random() - 0.5);
+}
 
 // Pagination
 const ITEMS_PER_PAGE = 20;
@@ -514,17 +517,19 @@ export default function Home() {
     const lang = navigator.language.slice(0, 2);
     if (lang === 'de' || lang === 'en' || lang === 'fr') {
       setLocale(lang as 'fr' | 'en' | 'de');
-    } else {
-      setLocale('en');
     }
 
     const urlParams = new URLSearchParams(window.location.search);
     const categoryParam = urlParams.get('category') as Category;
-    const pageParam = parseInt(urlParams.get('page') || '1', 10);
+    const validCategories: Category[] = ['tous', 'sport', 'homme_mode', 'femme_mode', 'outils', 'bijoux', 'beaute'];
 
-    if (categoryParam && ['tous', 'sport', 'mode homme', 'mode femme', 'outils', 'bijoux', 'beaute'].includes(categoryParam)) {
+    if (categoryParam && validCategories.includes(categoryParam)) {
       setSelectedCategory(categoryParam);
+    } else {
+      setSelectedCategory('tous');
     }
+
+    const pageParam = parseInt(urlParams.get('page') || '1', 10);
     setCurrentPage(pageParam >= 1 ? pageParam : 1);
   }, []);
 
@@ -532,8 +537,8 @@ export default function Home() {
 
   const allProducts =
     selectedCategory === 'tous'
-      ? Object.values(products).flat().sort(() => Math.random() - 0.5)
-      : products[selectedCategory as Exclude<Category, 'tous'>];
+      ? shuffleArray(Object.values(products).flat())
+      : products[selectedCategory] || [];
 
   const filteredProducts = allProducts.filter(
     (product) =>
@@ -557,18 +562,20 @@ export default function Home() {
   return (
     <>
       <main className="p-4 sm:p-6 md:p-8">
+        {/* Barre de recherche */}
         <div className="flex justify-center mb-4">
           <input
             type="text"
             placeholder={t('rechercher')}
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
-            className="w-full max-w-md px-4 py-2 border rounded-full text-black focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full max-w-md px-4 py-2 border-2 border-blue-500 rounded-full text-black bg-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-600"
           />
         </div>
 
+        {/* Navigation des catégories */}
         <nav className="flex flex-wrap justify-center gap-3 my-6">
-          {(['tous', 'sport', 'mode homme', 'mode femme', 'outils', 'bijoux', 'beaute'] as Category[]).map((cat: Category) => (
+          {(['tous', 'sport', 'homme_mode', 'femme_mode', 'outils', 'bijoux', 'beaute'] as Category[]).map((cat: Category) => (
             <button
               key={cat}
               onClick={() => {
@@ -590,6 +597,7 @@ export default function Home() {
           ))}
         </nav>
 
+        {/* Grille des produits */}
         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
           {displayedProducts.map((product: Product) => (
             <div
@@ -618,6 +626,7 @@ export default function Home() {
           ))}
         </div>
 
+        {/* Pagination */}
         {totalPages > 1 && (
           <div className="flex justify-center mt-8 space-x-2">
             {[...Array(totalPages)].map((_, index) => {
