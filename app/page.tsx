@@ -482,11 +482,12 @@ const products: Record<Exclude<Category, 'tous'>, Product[]> = {
   ]
 };
 
-const ITEMS_PER_PAGE = 20;
-
 function shuffleArray<T>(array: T[]): T[] {
   return [...array].sort(() => Math.random() - 0.5);
 }
+
+// Pagination
+const ITEMS_PER_PAGE = 20;
 
 export default function Home() {
   const [selectedCategory, setSelectedCategory] = useState<Category>('tous');
@@ -506,7 +507,8 @@ export default function Home() {
     const categoryParam = urlParams.get('category') as Category;
     const pageParam = parseInt(urlParams.get('page') || '1', 10);
 
-    if (categoryParam && Object.keys(products).includes(categoryParam)) {
+    const validCategories: Category[] = ['tous', 'sport', 'homme_mode', 'femme_mode', 'outils', 'bijoux', 'beaute'];
+    if (categoryParam && validCategories.includes(categoryParam)) {
       setSelectedCategory(categoryParam);
     }
     setCurrentPage(pageParam >= 1 ? pageParam : 1);
@@ -521,7 +523,7 @@ export default function Home() {
   const filteredProducts = allProducts.filter(
     (product) =>
       product.name?.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      product.description.toLowerCase().includes(searchTerm.toLowerCase())
+      product.description?.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
   const totalPages = Math.ceil(filteredProducts.length / ITEMS_PER_PAGE);
@@ -535,6 +537,15 @@ export default function Home() {
     params.set('category', selectedCategory);
     params.set('page', page.toString());
     window.location.search = params.toString();
+  };
+
+  const changeCategory = (cat: Category) => {
+    setSelectedCategory(cat);
+    setCurrentPage(1);
+    const params = new URLSearchParams(window.location.search);
+    params.set('category', cat);
+    params.set('page', '1');
+    window.history.replaceState({}, '', `${window.location.pathname}?${params.toString()}`);
   };
 
   return (
@@ -553,17 +564,10 @@ export default function Home() {
 
         {/* Navigation des catégories */}
         <nav className="flex flex-wrap justify-center gap-3 my-6">
-          {(Object.keys(products) as Category[]).map((cat) => (
+          {(['tous', 'sport', 'homme_mode', 'femme_mode', 'outils', 'bijoux', 'beaute'] as Category[]).map((cat) => (
             <button
               key={cat}
-              onClick={() => {
-                setSelectedCategory(cat);
-                setCurrentPage(1);
-                const params = new URLSearchParams(window.location.search);
-                params.set('category', cat);
-                params.set('page', '1');
-                window.history.replaceState({}, '', `${window.location.pathname}?${params.toString()}`);
-              }}
+              onClick={() => changeCategory(cat)}
               className={`px-4 py-2 rounded-full text-sm font-semibold transition ${
                 selectedCategory === cat
                   ? 'bg-white text-black shadow-md'
