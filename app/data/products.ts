@@ -145,7 +145,7 @@ export const products: Record<string, Product[]> = {
   price: "€42.99",
   image: "https://p16-oec-eu-common-no.tiktokcdn-eu.com/tos-no1a-i-t5fjg24jzw-no/e9c46d8d061a4a61b4845f07009e0cf1~tplv-t5fjg24jzw-resize-webp:260:260.webp",
   tiktokLink: "https://www.tiktok.com/view/product/1729482360806480500"
-}
+},
 
 ],
 
@@ -414,7 +414,7 @@ export const products: Record<string, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729531790418483362"
 },
 {
-  38,
+  id: 38,
   title: "Skateshoes blancs – homme",
   description: "Chaussures de sport décontractées pour hommes, style skateur avec semelle épaisse, idéales pour étudiants et usage quotidien.",
   price: "€32.99",
