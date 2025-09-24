@@ -138,6 +138,15 @@ export const products: Record<string, Product[]> = {
   description: "Rapid Jump Skipping Ropes for Aerobic Exercise Speed Training & Jumping Training Accessories.",
   tiktokLink: "https://www.tiktok.com/view/product/1729480320958830962"
 },
+{
+  id: 16,
+  name: "Baskets montantes homme colorblock",
+  description: "Chaussures de basketball montantes respirantes, confortables et antidérapantes. Idéal pour un usage quotidien.",
+  price: "€42.99",
+  image: "https://p16-oec-eu-common-no.tiktokcdn-eu.com/tos-no1a-i-t5fjg24jzw-no/e9c46d8d061a4a61b4845f07009e0cf1~tplv-t5fjg24jzw-resize-webp:260:260.webp",
+  tiktokLink: "https://www.tiktok.com/view/product/1729482360806480500"
+}
+
 ],
 
   homme_mode: [
@@ -333,7 +342,7 @@ export const products: Record<string, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729524484246248047"
 },
 {
-  id: 10048,
+  id: 30,
   title: "Chaussures Tendance Homme – Mocassins Confort",
   description: "Chaussures slip-on classiques pour hommes, style tendance et confortable. Idéal pour une tenue décontractée au quotidien ou pour sortir.",
   price: "€17.99",
@@ -341,7 +350,7 @@ export const products: Record<string, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729480302211537581"
 },
 {
-  id: 10052,
+  id: 31,
   title: "Mocassins homme – Slip-on respirants",
   description: "Chaussures bateau décontractées pour homme, confortables, respirantes, bout rond. Style simple et élégant pour un usage quotidien.",
   price: "€24.99",
@@ -349,7 +358,7 @@ export const products: Record<string, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729480824191818206"
 },
 {
-  id: 10052,
+  id: 32,
   title: "Mocassins homme – Slip-on respirants",
   description: "Chaussures bateau décontractées pour homme, confortables, respirantes, bout rond. Style simple et élégant pour un usage quotidien.",
   price: "€24.99",
@@ -357,7 +366,7 @@ export const products: Record<string, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729480824191818206"
 },
 {
-  id: 10053,
+  id: 33,
   title: "Bottes homme style britannique",
   description: "Chaussures montantes pour homme – antidérapantes, résistantes à l’usure. Idéales pour la randonnée ou le quotidien, disponibles en plusieurs coloris.",
   price: "€29.99",
@@ -365,7 +374,7 @@ export const products: Record<string, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729521844536777202"
 },
 {
-  id: 10054,
+  id: 34,
   title: "Mocassins cuir PU homme",
   description: "Chaussures à enfiler pour homme – cuir PU léger, respirant et confortable, parfaites pour une tenue décontractée au quotidien.",
   price: "€24.99",
@@ -373,7 +382,7 @@ export const products: Record<string, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729481075195091832"
 },
 {
-  id: 10055,
+  id: 35,
   title: "Baskets basses homme – tendance et confort",
   description: "Sneakers à lacets pour homme, look décontracté et sportif. Confortables pour un usage quotidien. Idéal pour les tenues modernes.",
   price: "€26.99",
@@ -381,7 +390,7 @@ export const products: Record<string, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729514388009360154"
 },
 {
-  id: 10056,
+  id:36:
   title: "Sneakers sport – look dynamique",
   description: "Baskets stylées pour homme, idéales pour le sport ou un look urbain. Confortables, tendance et polyvalentes.",
   price: "€28.99",
@@ -389,7 +398,7 @@ export const products: Record<string, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729494463422569355"
 },
 {
-  id: 10057,
+  id: 37,
   title: "Sneakers respirants et stylés – homme",
   description: "Baskets basses à lacets, confortables, respirantes et tendance pour une utilisation quotidienne ou sportive.",
   price: "€27.99",
@@ -405,14 +414,29 @@ export const products: Record<string, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729531790418483362"
 },
 {
-  id: 10059,
+  38,
   title: "Skateshoes blancs – homme",
   description: "Chaussures de sport décontractées pour hommes, style skateur avec semelle épaisse, idéales pour étudiants et usage quotidien.",
   price: "€32.99",
   image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/c2c5e16f7d6640b5834115f72f5ccb74~tplv-o3syd03w52-resize-webp:260:260.webp",
   tiktokLink: "https://www.tiktok.com/view/product/1729503063610530605"
 },
-
+{
+  id: 39,
+  title: "Weiße Herrenschuhe – Skateschuhe",
+  description: "Chaussures de sport décontractées blanches pour hommes avec semelle épaisse, parfaites pour un look étudiant ou urbain.",
+  price: "€32.99",
+  image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/c2c5e16f7d6640b5834115f72f5ccb74~tplv-o3syd03w52-resize-webp:260:260.webp",
+  tiktokLink: "https://www.tiktok.com/view/product/1729503063610530605"
+},
+{
+  id: 40,
+  title: "Men's Mid-Calf Outdoor Hiking Boots",
+  description: "Bottes montantes lacées pour hommes – confortables et résistantes, parfaites pour le plein air, la randonnée ou un look étudiant tendance.",
+  price: "€37.99",
+  image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/d29083d7aa7f40a8bffcc8b2de8af819~tplv-o3syd03w52-resize-webp:260:260.webp",
+  tiktokLink: "https://www.tiktok.com/view/product/1729495629795007087"
+},
 
  ],
  
@@ -983,6 +1007,14 @@ export const products: Record<string, Product[]> = {
   description: "Bezaubernder Mini-Rosen-Teddybär – Romantisches Geschenk für Valentinstag, Muttertag, Geburtstag oder Weihnachten.",
   tiktokLink: "https://www.tiktok.com/view/product/1729543362580159065"
 },
+{
+  id: 3,
+  title: "Lancôme Idôle Eau de Parfum – 50ml",
+  description: "Parfum femme longue tenue aux notes de bergamote, jasmin, rose et vanille – un parfum frais et floral signé Lancôme.",
+  price: "€54.99",
+  image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/708483489afa48a295fc06bfa421da2f~tplv-o3syd03w52-resize-webp:260:260.webp",
+  tiktokLink: "https://www.tiktok.com/view/product/1729546611686414390"
+}
 
 
   ],
