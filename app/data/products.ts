@@ -390,7 +390,7 @@ export const products: Record<string, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729514388009360154"
 },
 {
-  id:36:
+  id: 36,
   title: "Sneakers sport – look dynamique",
   description: "Baskets stylées pour homme, idéales pour le sport ou un look urbain. Confortables, tendance et polyvalentes.",
   price: "€28.99",
