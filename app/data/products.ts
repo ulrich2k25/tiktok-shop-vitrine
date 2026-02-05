@@ -16,7 +16,7 @@ export const products: Record<string, Product[]> = {
 
  sport: [
      {
-    id: 1,
+    id: 11,
     name: "Basketball Painting Wall Art",
     image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/b27a5fd6703749f68ae2bbdff3c04f55~tplv-o3syd03w52-resize-webp:260:260.webp",
     price: "29.99€",
@@ -24,7 +24,7 @@ export const products: Record<string, Product[]> = {
     tiktokLink: "https://www.tiktok.com/view/product/1729481815282915439",
   },
   {
-    id: 2,
+    id: 12,
     name: "Basketballkorb NEON Hoop",
     image: "https://p16-oec-eu-common-useast2a.ibyteimg.com/tos-useast2a-i-tulkllf4y5-euttp/4e4795ebdbd0404694a7f5fc42c4e8dc~tplv-tulkllf4y5-resize-webp:260:260.webp",
     price: "49.99€",
@@ -32,7 +32,7 @@ export const products: Record<string, Product[]> = {
     tiktokLink: "https://www.tiktok.com/view/product/1729481553638103831",
   },
   {
-    id: 3,
+    id: 13,
     name: "Men's Basketball Training Set",
     image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/e373c7d449694533b1d8fd2ede1203c9~tplv-o3syd03w52-resize-webp:260:260.webp",
     price: "34.99€",
@@ -40,7 +40,7 @@ export const products: Record<string, Product[]> = {
     tiktokLink: "https://www.tiktok.com/view/product/1729481586467314124",
   },
   {
-    id: 4,
+    id: 14,
     name: "Basketball Taille 7 + Pompe",
     image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/3166569145fa4e3da1cce2adbf2d3652~tplv-o3syd03w52-resize-webp:260:260.webp",
     price: "24.99€",
@@ -48,7 +48,7 @@ export const products: Record<string, Product[]> = {
     tiktokLink: "https://www.tiktok.com/view/product/1729489617001027913",
   },
   {
-    id: 5,
+    id: 15,
     name: "Basketball Kids Two-piece Set",
     image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/b5ebe78bbe1d4b5ab9541d3e0a8cb0fb~tplv-o3syd03w52-resize-webp:260:260.webp",
     price: "27.99€",
@@ -56,7 +56,7 @@ export const products: Record<string, Product[]> = {
     tiktokLink: "https://www.tiktok.com/view/product/1729484114341567051",
   },
   {
-    id: 6,
+    id: 16,
     name: "Men's Colorblock Basketball Sneakers",
     image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/f583504032f54427a0f888904b012528~tplv-o3syd03w52-resize-webp:260:260.webp",
     price: "59.99€",
@@ -64,7 +64,7 @@ export const products: Record<string, Product[]> = {
     tiktokLink: "https://www.tiktok.com/view/product/1729480302220187827",
   },
   {
-    id: 7,
+    id: 17,
     name: "Unisex Colorblock Basketball Shoes",
     image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/8013842615eb4d69950c47dbb4746ec2~tplv-o3syd03w52-resize-webp:260:260.webp",
     price: "54.99€",
@@ -72,7 +72,7 @@ export const products: Record<string, Product[]> = {
     tiktokLink: "https://www.tiktok.com/view/product/1729480988273842980",
   },
   {
-    id: 8,
+    id: 18,
     name: "High Top Colorful Basketball Shoes",
     image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/cfd5ec271590455db70d06febaf1f19b~tplv-o3syd03w52-resize-webp:260:260.webp",
     price: "64.99€",
@@ -80,7 +80,7 @@ export const products: Record<string, Product[]> = {
     tiktokLink: "https://www.tiktok.com/view/product/1729480606759688654",
   },
   {
-    id: 9,
+    id: 19,
     name: "Unisex Basketball Shoes Non-slip",
     image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/3701fe51d2974ce5bffd6c3d2ba9f433~tplv-o3syd03w52-resize-webp:260:260.webp",
     price: "49.99€",
@@ -88,7 +88,7 @@ export const products: Record<string, Product[]> = {
     tiktokLink: "https://www.tiktok.com/view/product/1729480586420590963",
   },
   {
-    id: 10,
+    id: 110,
     name: "Women's Lace Up Platform Sneakers",
     image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/e6d6781b461c48e29b6acac6cc3bd232~tplv-o3syd03w52-resize-webp:260:260.webp",
     price: "44.99€",
@@ -97,7 +97,7 @@ export const products: Record<string, Product[]> = {
   },
   
   {
-    id: 11,
+    id: 111,
     name: "Colorblock Lace Up Sneakers",
     image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/8757f8a963204f8f8b920b2ce212bdba~tplv-o3syd03w52-resize-webp:260:260.webp",
     price: "39.99€",
@@ -106,7 +106,7 @@ export const products: Record<string, Product[]> = {
   },
   
   {
-  id: 12,
+  id: 112,
   name: "Two-Piece Boy's Basketball Set",
   image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/f49f7bc2339b45ebbe07fa0f447adb63~tplv-o3syd03w52-resize-webp:260:260.webp",
   price: "29.99€",
@@ -115,7 +115,7 @@ export const products: Record<string, Product[]> = {
 },
 
 {
-  id: 13,
+  id: 113,
   name: "POSTURE Haltungstrainer",
   image: "https://p16-oec-eu-common-no.tiktokcdn-eu.com/tos-no1a-i-t5fjg24jzw-no/c6a62bae21dc4dabbe8c18626626bd6e~tplv-t5fjg24jzw-resize-webp:260:260.webp",
   price: "29.99€",
@@ -123,7 +123,7 @@ export const products: Record<string, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729489255039408667"
 },
 {
-  id: 14,
+  id: 114,
   name: "Fußballschuhe für Jungen und Mädchen",
   image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/a119d41ef16047f29317cd561b666836~tplv-o3syd03w52-resize-webp:260:260.webp",
   price: "34.99€",
@@ -131,7 +131,7 @@ export const products: Record<string, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729540863620978785"
 },
 {
-  id: 15,
+  id: 115,
   name: "Skipping Rope with Ball Bearings",
   image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/3b1cc191ef2343b8bae3fc596267fbbe~tplv-o3syd03w52-resize-webp:260:260.webp",
   price: "19.99€",
@@ -139,7 +139,7 @@ export const products: Record<string, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729480320958830962"
 },
 {
-  id: 16,
+  id: 116,
   name: "Baskets montantes homme colorblock",
   description: "Chaussures de basketball montantes respirantes, confortables et antidérapantes. Idéal pour un usage quotidien.",
   price: "€42.99",
@@ -147,11 +147,21 @@ export const products: Record<string, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729482360806480500"
 },
 
+{
+  id: 117,
+  name: "MERACH – Appareil de musculation abdominal réglable",
+  image: "https://p16-oec-eu-common-no.tiktokcdn-eu.com/tos-no1a-i-t5fjg24jzw-no/75f5730eb210479e913c12a91c7d020a~tplv-t5fjg24jzw-resize-webp:260:260.webp",
+  price: "€50.00",
+  description: "Appareil de musculation abdominal MERACH avec écran LCD, pliable, idéal pour le renforcement du core, des abdominaux, des fessiers et l’entraînement fitness à domicile.",
+  tiktokLink: "https://www.tiktok.com/view/product/1729640992711220110",
+},
+
+
 ],
 
   homme_mode: [
     {
-  id: 1,
+  id: 21,
   name: "Men's Letter Print Round Neck Tee",
   image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/c58276a2749444bb864f9ad5b723bd4e~tplv-o3syd03w52-resize-webp:260:260.webp",
   price: "19.99€",
@@ -159,7 +169,7 @@ export const products: Record<string, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729490583109605513"
 },
 {
-  id: 2,
+  id: 22,
   name: "Men's Letter & Number Print Round Neck Tee",
   image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/d65a69ddf7e040ecae58bca81231543c~tplv-o3syd03w52-resize-webp:260:260.webp",
   price: "19.99€",
@@ -167,7 +177,7 @@ export const products: Record<string, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729490563639188462"
 },
 {
-  id: 3,
+  id: 23,
   name: "Men's Basketball Print Shorts",
   image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/855088104a5249a88d80b7409b5c91a7~tplv-o3syd03w52-resize-webp:260:260.webp",
   price: "24.99€",
@@ -175,7 +185,7 @@ export const products: Record<string, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729482769530591485"
 },
 {
-  id: 4,
+  id: 24,
   name: "Men's Letter Print Denim Shorts",
   image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/d6ebee90280d4b85b73e00aa3b2f4d7c~tplv-o3syd03w52-resize-webp:260:260.webp",
   price: "29.99€",
@@ -183,14 +193,14 @@ export const products: Record<string, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729500909793024819"
 },
 {
-  id: 5,
+  id: 25,
   name: "Men's Thermal Lined Side Stripe Hoodie & Pants Set",
   image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/5132c40825674b24bcfbb910d0d45b9b~tplv-o3syd03w52-resize-webp:260:260.webp",
   price: "59.99€",
   description: "Casual Regular Fit Hooded Sweatshirt & Jogger Pants for Daily Wear, Fall & Winter.",
   tiktokLink: "https://www.tiktok.com/view/product/1729518710852589570"
 }, {
-  id: 6,
+  id: 26,
   name: "Retro Striped Loose Sweater",
   image: "https://p16-oec-eu-common-no.tiktokcdn-eu.com/tos-no1a-i-t5fjg24jzw-no/3a57365881b24b90bb6d98c3e34e11c9~tplv-t5fjg24jzw-resize-webp:260:260.webp",
   price: "49.99€",
@@ -198,7 +208,7 @@ export const products: Record<string, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729544929579408083"
 },
 {
-  id: 7,
+  id: 27,
   name: "2025 Neue ES Doppelnaht Hoodie Set",
   image: "https://p16-oec-eu-common-no.tiktokcdn-eu.com/tos-no1a-i-t5fjg24jzw-no/c5df9a11013649b8abb06b52536297ee~tplv-t5fjg24jzw-resize-webp:260:260.webp",
   price: "59.99€",
@@ -206,7 +216,7 @@ export const products: Record<string, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729546005373557459"
 }, 
 {
-  id: 8,
+  id: 28,
   name: "Stylish Men's 2-Piece Waffle Knit Shorts Set - Summer Sportswear",
   image: "https://p16-oec-eu-common-no.tiktokcdn-eu.com/tos-no1a-i-t5fjg24jzw-no/2c900aa8b7474ab18c2e54f22bffa18a~tplv-t5fjg24jzw-resize-webp:260:260.webp",
   price: "49.99€",
@@ -214,7 +224,7 @@ export const products: Record<string, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729527733324651356"
 },
 {
-  id: 8,
+  id: 29,
   name: "New York Embroidery Baseball Cap",
   image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/e9bee29fe10f47ee8f234b5bdef68645~tplv-o3syd03w52-resize-webp:260:260.webp",
   price: "19.99€",
@@ -222,7 +232,7 @@ export const products: Record<string, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729480149563644055"
 },
 {
-  id: 9,
+  id: 210,
   name: "Men's Fashionable Lace Up Mid Top Sneakers",
   image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/5391be0ade99480c85aabcc3445d8dad~tplv-o3syd03w52-resize-webp:260:260.webp",
   price: "49.99€",
@@ -230,7 +240,7 @@ export const products: Record<string, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729491822869518959"
 },
 {
-  id: 10,
+  id: 211,
   name: "Men's Sporty Lace Up Running Shoes",
   image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/f11c4a8a09204745afff6b2dce93f448~tplv-o3syd03w52-resize-webp:260:260.webp",
   price: "54.99€",
@@ -238,7 +248,7 @@ export const products: Record<string, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729480473791535414"
 },
 {
-  id: 12,
+  id: 212,
   name: "2025 American Casual Jogging Set with Zipper & Hoodie",
   image: "https://p16-oec-eu-common-no.tiktokcdn-eu.com/tos-no1a-i-t5fjg24jzw-no/06fb84d4b27146e083be5f8fff3c1f23~tplv-t5fjg24jzw-resize-webp:260:260.webp",
   price: "18,89 €", 
@@ -246,7 +256,7 @@ export const products: Record<string, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729519345784101861"
 },
 {
-  id: 18,
+  id: 213,
   name: "Nike Air Force 1 Sneakers for Women",
   image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/24aba51afe4344b9b507522ab4f5e964~tplv-o3syd03w52-resize-webp:260:260.webp",
   price: "89.99€",
@@ -254,7 +264,7 @@ export const products: Record<string, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729545254344366942"
 },
 {
-  id: 19, // ID unique suivant
+  id: 214, // ID unique suivant
   title: "Men's Peace Dove Print T-shirt",
   description: "T-shirt homme à col rond avec motif colombe – coupe régulière, style décontracté pour l'été et le quotidien.",
   price: "€13.99",
@@ -262,7 +272,7 @@ export const products: Record<string, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729507055983892617"
 },
 {
-  id: 20,
+  id: 215,
   title: "Casual Men's Straight-Leg Pants",
   description: "Pantalon pour homme à jambe droite – cordon de serrage et détails bouton, léger et confortable pour le sport ou la détente.",
   price: "€16.99",
@@ -270,7 +280,7 @@ export const products: Record<string, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729494672400423481"
 },
 {
-  id: 21,
+  id: 216,
   title: "Men's Ripped Denim Jacket",
   description: "Veste en jean pour homme avec effet déchiré – coupe régulière, manches longues, idéale pour un look tendance toutes saisons.",
   price: "€23.99",
@@ -278,7 +288,7 @@ export const products: Record<string, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729496192922786415"
 },
 {
-  id: 22,
+  id: 217,
   title: "Men's Letter Print Flight Jacket",
   description: "Veste aviateur pour homme avec imprimé lettre, col baseball et boutons pression. Parfait pour un style décontracté en automne/hiver.",
   price: "€24.99",
@@ -286,7 +296,7 @@ export const products: Record<string, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729531981575920367"
 },
 {
-  id: 23,
+  id: 218,
   title: "Unisex Cartoon Bear Varsity Jacket",
   description: "Veste universitaire décontractée avec imprimé lettre et ours, poches à patchs, idéale pour l’automne/hiver. Unisexe et stylée.",
   price: "€29.99",
@@ -294,7 +304,7 @@ export const products: Record<string, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729509272295217903"
 },
 {
-  id: 24,
+  id: 219,
   title: "Men's Suspender Pants Suit Set",
   description: "Costume slim homme avec pantalon à bretelles, élégant et formel, parfait pour les mariages, fêtes et occasions estivales.",
   price: "€39.99",
@@ -302,7 +312,7 @@ export const products: Record<string, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729493126665968193"
 },
 {
-  id: 25,
+  id: 220,
   title: "Men's Plain Button Fly Raw Trim Jeans",
   description: "Jean slim décontracté pour homme avec braguette boutonnée, coupe confortable, parfait pour un usage quotidien toutes saisons.",
   price: "€29.99",
@@ -310,7 +320,7 @@ export const products: Record<string, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729481083357927992"
 },
 {
-  id: 26,
+  id: 221,
   title: "Men's Solid Color Ripped Jacket",
   description: "Veste homme casual avec effet déchiré, coupe mode à boutons, parfaite pour toutes les saisons.",
   price: "€34.99",
@@ -318,7 +328,7 @@ export const products: Record<string, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729480962119080504"
 },
 {
-  id: 27,
+  id: 222,
   title: "Men's Ripped Zipper Pocket Design Jeans",
   description: "Jean homme large avec design déchiré et poches zippées – idéal pour un look casual tendance toute l'année.",
   price: "€29.99",
@@ -326,7 +336,7 @@ export const products: Record<string, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729480444824361528"
 },
 {
-  id: 28,
+  id: 223,
   title: "Men's Solid Button Pocket Lapel Jacket & Cargo Pant Set",
   description: "Ensemble veste boutonnée avec col à revers et pantalon cargo à cordon – coupe régulière, look décontracté et respirant pour toutes les saisons.",
   price: "€34.99",
@@ -334,7 +344,7 @@ export const products: Record<string, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729480599174290011"
 },
 {
-  id: 29,
+  id: 224,
   title: "Two-Piece Set Men's Letter Print Sweatshirt & Sweatpants",
   description: "Ensemble deux pièces pour homme – sweatshirt à épaules tombantes et pantalon de survêtement, look décontracté et respirant pour le printemps et l'automne.",
   price: "€28.99",
@@ -342,7 +352,7 @@ export const products: Record<string, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729524484246248047"
 },
 {
-  id: 30,
+  id: 225,
   title: "Chaussures Tendance Homme – Mocassins Confort",
   description: "Chaussures slip-on classiques pour hommes, style tendance et confortable. Idéal pour une tenue décontractée au quotidien ou pour sortir.",
   price: "€17.99",
@@ -350,7 +360,7 @@ export const products: Record<string, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729480302211537581"
 },
 {
-  id: 31,
+  id: 226,
   title: "Mocassins homme – Slip-on respirants",
   description: "Chaussures bateau décontractées pour homme, confortables, respirantes, bout rond. Style simple et élégant pour un usage quotidien.",
   price: "€24.99",
@@ -358,7 +368,7 @@ export const products: Record<string, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729480824191818206"
 },
 {
-  id: 32,
+  id: 227,
   title: "Mocassins homme – Slip-on respirants",
   description: "Chaussures bateau décontractées pour homme, confortables, respirantes, bout rond. Style simple et élégant pour un usage quotidien.",
   price: "€24.99",
@@ -366,7 +376,7 @@ export const products: Record<string, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729480824191818206"
 },
 {
-  id: 33,
+  id: 228,
   title: "Bottes homme style britannique",
   description: "Chaussures montantes pour homme – antidérapantes, résistantes à l’usure. Idéales pour la randonnée ou le quotidien, disponibles en plusieurs coloris.",
   price: "€29.99",
@@ -374,7 +384,7 @@ export const products: Record<string, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729521844536777202"
 },
 {
-  id: 34,
+  id: 229,
   title: "Mocassins cuir PU homme",
   description: "Chaussures à enfiler pour homme – cuir PU léger, respirant et confortable, parfaites pour une tenue décontractée au quotidien.",
   price: "€24.99",
@@ -382,7 +392,7 @@ export const products: Record<string, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729481075195091832"
 },
 {
-  id: 35,
+  id: 230,
   title: "Baskets basses homme – tendance et confort",
   description: "Sneakers à lacets pour homme, look décontracté et sportif. Confortables pour un usage quotidien. Idéal pour les tenues modernes.",
   price: "€26.99",
@@ -390,7 +400,7 @@ export const products: Record<string, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729514388009360154"
 },
 {
-  id: 36,
+  id: 231,
   title: "Sneakers sport – look dynamique",
   description: "Baskets stylées pour homme, idéales pour le sport ou un look urbain. Confortables, tendance et polyvalentes.",
   price: "€28.99",
@@ -398,7 +408,7 @@ export const products: Record<string, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729494463422569355"
 },
 {
-  id: 37,
+  id: 232,
   title: "Sneakers respirants et stylés – homme",
   description: "Baskets basses à lacets, confortables, respirantes et tendance pour une utilisation quotidienne ou sportive.",
   price: "€27.99",
@@ -406,7 +416,7 @@ export const products: Record<string, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729518774192937754"
 },
 {
-  id: 10058,
+  id: 233,
   title: "Baskets épaisses respirantes – femme",
   description: "Chaussures polyvalentes à semelles épaisses, respirantes et légères, idéales pour l’été ou un usage quotidien.",
   price: "€29.99",
@@ -414,7 +424,7 @@ export const products: Record<string, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729531790418483362"
 },
 {
-  id: 38,
+  id: 234,
   title: "Skateshoes blancs – homme",
   description: "Chaussures de sport décontractées pour hommes, style skateur avec semelle épaisse, idéales pour étudiants et usage quotidien.",
   price: "€32.99",
@@ -422,7 +432,7 @@ export const products: Record<string, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729503063610530605"
 },
 {
-  id: 39,
+  id: 235,
   title: "Weiße Herrenschuhe – Skateschuhe",
   description: "Chaussures de sport décontractées blanches pour hommes avec semelle épaisse, parfaites pour un look étudiant ou urbain.",
   price: "€32.99",
@@ -430,7 +440,7 @@ export const products: Record<string, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729503063610530605"
 },
 {
-  id: 40,
+  id: 236,
   title: "Men's Mid-Calf Outdoor Hiking Boots",
   description: "Bottes montantes lacées pour hommes – confortables et résistantes, parfaites pour le plein air, la randonnée ou un look étudiant tendance.",
   price: "€37.99",
@@ -442,7 +452,7 @@ export const products: Record<string, Product[]> = {
  
   femme_mode: [
    {
-  id: 1,
+  id: 31,
   name: "Women's Embroidering Design Pocket Denim Pants",
   image: "https://p16-oec-eu-common-no.tiktokcdn-eu.com/tos-no1a-i-t5fjg24jzw-no/bc030196f6c747019c6adee266abaf9f~tplv-t5fjg24jzw-resize-webp:260:260.webp",
   price: "39.99€",
@@ -450,7 +460,7 @@ export const products: Record<string, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729520822522714812"
 },
 {
-  id: 2,
+  id: 32,
   name: "Women's Cut Out Ripped Wide Leg Jeans",
   image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/21208c5a3cb24425bb43fa95b235aa4f~tplv-o3syd03w52-resize-webp:260:260.webp",
   price: "39.99€",
@@ -458,7 +468,7 @@ export const products: Record<string, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729481800901826808"
 },
 {
-  id: 3,
+  id: 33,
   name: "Two-Piece Women's Jacket & Skirt Set",
   image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/f85538ccc3ba482b84f7f8f3c3786b91~tplv-o3syd03w52-resize-webp:260:260.webp",
   price: "49.99€",
@@ -466,7 +476,7 @@ export const products: Record<string, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729488609782176467"
 },
 {
-  id: 4,
+  id: 34,
   name: "Two-piece Solid Crop Top & Shorts Set",
   image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/2ce52dcc706649ed8bdaa359356e69a6~tplv-o3syd03w52-resize-webp:260:260.webp",
   price: "34.99€",
@@ -474,7 +484,7 @@ export const products: Record<string, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729488923301091956"
 },
 {
-  id: 5,
+  id: 35,
   name: "Women's Ribbed Crop Top & Pants Set",
   image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/092f456f0ae84e289c094940ccb29766~tplv-o3syd03w52-resize-webp:260:260.webp",
   price: "39.99€",
@@ -482,7 +492,7 @@ export const products: Record<string, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729481968261765508"
 },
 {
-  id: 6,
+  id: 36,
   name: "Women's Butterfly Print Tee & Pants Set",
   image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/bcc1bd567a0c419ebafaf08c6a01a6d1~tplv-o3syd03w52-resize-webp:260:260.webp",
   price: "39.99€",
@@ -490,7 +500,7 @@ export const products: Record<string, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729513878777403866"
 },
 {
-  id: 7,
+  id: 37,
   name: "Two-Piece Women's Side Striped Tube Top & Pants",
   image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/b705c8f9465740608bcd5bba52b35b75~tplv-o3syd03w52-resize-webp:260:260.webp",
   price: "39.99€",
@@ -498,7 +508,7 @@ export const products: Record<string, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729504672829511877"
 },
 {
-  id: 8,
+  id: 38,
   name: "Women's All Over Print Tube Dress",
   image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/6ae6b2e5641748a18d3a480337cbd737~tplv-o3syd03w52-resize-webp:260:260.webp",
   price: "39.99€",
@@ -507,7 +517,7 @@ export const products: Record<string, Product[]> = {
 },
 
 {
-  id: 10,
+  id: 39,
   name: "Women's 2 Counts Solid Backless Crop Tube Top & High Waist Skirt Set",
   image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/91271c0a6901434db1cf094ff1b39382~tplv-o3syd03w52-resize-webp:260:260.webp",
   price: "34.99€",
@@ -516,7 +526,7 @@ export const products: Record<string, Product[]> = {
 },
 
 {
-  id: 11,
+  id: 310,
   name: "Women's Plain Split Thigh Drawstring Ruched Cami Dress",
   image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/1fb681f2906648deb284bc072d20c054~tplv-o3syd03w52-resize-webp:260:260.webp",
   price: "39.99€",
@@ -524,7 +534,7 @@ export const products: Record<string, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729480293721545095"
 },
 {
-  id: 12,
+  id: 311,
   name: "Women's Plain Ruched Bodycon Dress",
   image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/842647616ca4497cb8c7d3e07f824ae9~tplv-o3syd03w52-resize-webp:260:260.webp",
   price: "29.99€",
@@ -532,7 +542,7 @@ export const products: Record<string, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729486772865243441"
 },
 {
-  id: 13,
+  id: 312,
   name: "Sporty Women's Plain Square Neck Sports Dress",
   image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/afcc61a172894dc48eef79dccf3d2e54~tplv-o3syd03w52-resize-webp:260:260.webp",
   price: "34.99€",
@@ -540,7 +550,7 @@ export const products: Record<string, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729487716676508507"
 },
 {
-  id: 14,
+  id: 313,
   name: "Women's 3 Counts Solid Backless Sports Vest",
   image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/17f2043583ab429eac417c87c0be14bd~tplv-o3syd03w52-resize-webp:260:260.webp",
   price: "8,55€", 
@@ -548,7 +558,7 @@ export const products: Record<string, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729497281839799291"
 },
 {
-  id: 13,
+  id: 314,
   name: "Women's Crop Halter Top & Wide Leg Pants Set",
   image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/eeec88b5a49441bc8c429561d8f8031c~tplv-o3syd03w52-resize-webp:260:260.webp",
   price: "15,86€",
@@ -556,7 +566,7 @@ export const products: Record<string, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729498020764293590"
 },
 {
-  id: 14,
+  id: 315,
   name: "Schlappen Susa Gold",
   image: "https://p16-oec-eu-common-useast2a.ibyteimg.com/tos-useast2a-i-tulkllf4y5-euttp/94038b344c4c4eb4af83323f1b0654ca~tplv-tulkllf4y5-resize-webp:260:260.webp",
   price: "19.99€",
@@ -564,7 +574,7 @@ export const products: Record<string, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729449671511152910"
 },
 {
-  id: 15,
+  id: 316,
   name: "Louis Vuitton - Pool Kissenrutsche (Schwarz)",
   image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/eb13aedae52441429691853a3ef4fd10~tplv-o3syd03w52-resize-webp:260:260.webp",
   price: "49.99€",
@@ -572,7 +582,7 @@ export const products: Record<string, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729523892031363469"
 },
 {
-  id: 16,
+  id: 317,
   name: "Women's Fashionable Slide Sandals",
   image: "https://p16-oec-eu-common-no.tiktokcdn-eu.com/tos-no1a-i-t5fjg24jzw-no/adad337d5ee448c1b37f6e86e6df0db2~tplv-t5fjg24jzw-resize-webp:260:260.webp",
   price: "19.99€",
@@ -580,7 +590,7 @@ export const products: Record<string, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729515688113904471"
 },
 {
-  id: 17,
+  id: 318,
   name: "Women's Solid Tube Top & Wide Leg Pants Set",
   image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/eeb36cc4dc4d464d94e1b435cf5a6b24~tplv-o3syd03w52-resize-webp:260:260.webp",
   price: "29.99€",
@@ -588,200 +598,200 @@ export const products: Record<string, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729492317840840719"
 },
 {
-  id: 18, // ID unique suivant
-  title: "Women's Transparent High Heel Sandals",
+  id: 319, // ID unique suivant
+  name: "Women's Transparent High Heel Sandals",
   description: "Sandales à talon carré transparentes – design élégant et tendance, parfaites pour les soirées ou les looks quotidiens.",
   price: "€19.99",
   image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/02f46e42498d4e2d95b8768f67d003ae~tplv-o3syd03w52-resize-webp:260:260.webp",
   tiktokLink: "https://www.tiktok.com/view/product/1729495779524647345"
 },
 {
-  id: 19, // ID unique suivant
-  title: "Clogs Charms Set (12pcs) – Bow & Pearl",
+  id: 320, // ID unique suivant
+  name: "Clogs Charms Set (12pcs) – Bow & Pearl",
   description: "Set de 12 charms pour sabots – nœuds, perles et fleurs décoratives, parfait pour personnaliser vos chaussures style Crocs.",
   price: "€8.99",
   image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/7f417fd963d943809a898dd3b9603eb6~tplv-o3syd03w52-resize-webp:260:260.webp",
   tiktokLink: "https://www.tiktok.com/view/product/1729496527164905475"
 },
 {
-  id: 20, // ID unique suivant
-  title: "Women's Patchwork Low Top Sneakers",
+  id: 321, // ID unique suivant
+  name: "Women's Patchwork Low Top Sneakers",
   description: "Baskets basses femme à empiècements – confortables, stylées et parfaites pour un look décontracté au quotidien.",
   price: "€24.99",
   image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/04a28bd8b5f848c8875b96a3e816b981~tplv-o3syd03w52-resize-webp:260:260.webp",
   tiktokLink: "https://www.tiktok.com/view/product/1729489244585171070"
 },
 {
-  id: 21, // ID unique suivant
-  title: "Women's Patchwork Lace-Up Sneakers",
+  id: 322, // ID unique suivant
+  name: "Women's Patchwork Lace-Up Sneakers",
   description: "Baskets basses à lacets pour femme – design patchwork tendance, confortables et respirantes pour un usage quotidien.",
   price: "€23.99",
   image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/cddc31ee336446e1964495ae98c77aa3~tplv-o3syd03w52-resize-webp:260:260.webp",
   tiktokLink: "https://www.tiktok.com/view/product/1729480264824232251"
 },
 {
-  id: 22,
-  title: "Women's Fashionable Plain Color Slides",
+  id: 323,
+  name: "Women's Fashionable Plain Color Slides",
   description: "Claquettes plates pour femmes – confortables, légères et tendance, parfaites pour la plage, la maison ou les sorties quotidiennes.",
   price: "€9.99",
   image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/9a35a20c1c6142d3b936a6812012e462~tplv-o3syd03w52-resize-webp:260:260.webp",
   tiktokLink: "https://www.tiktok.com/view/product/1729487911771609687"
 },
 {
-  id: 23,
-  title: "Women's Fashionable Lace Up High Heel Sandals",
+  id: 324,
+  name: "Women's Fashionable Lace Up High Heel Sandals",
   description: "Sandales à talons hauts pour femmes – élégantes, à lacets, parfaites pour l'été, le quotidien ou des sorties stylées.",
   price: "€12.99",
   image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/29a1406d81454eca9311a3164612052b~tplv-o3syd03w52-resize-webp:260:260.webp",
   tiktokLink: "https://www.tiktok.com/view/product/1729480785688631710"
 },
 {
-  id: 24,
-  title: "Fashion Chain Decorated Slip on Sandals",
+  id: 325,
+  name: "Fashion Chain Decorated Slip on Sandals",
   description: "Sandales femmes avec chaîne décorative – confortables, légères, parfaites pour l'été et les looks du quotidien.",
   price: "€11.99",
   image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/f76d4db9b8354563967d5e500dbc3fec~tplv-o3syd03w52-resize-webp:260:260.webp",
   tiktokLink: "https://www.tiktok.com/view/product/1729502790088498032"
 },
 {
-  id: 25,
-  title: "Coarse Heeled Sandals for Women – Summer 2025 Collection",
+  id: 326,
+  name: "Coarse Heeled Sandals for Women – Summer 2025 Collection",
   description: "Sandales pour femmes à talons larges, style luxe et élégant. Idéales pour assortir avec jupes ou robes – nouvelle collection 2025.",
   price: "€13.99",
   image: "https://p16-oec-eu-common-no.tiktokcdn-eu.com/tos-no1a-i-t5fjg24jzw-no/a10a3a89ab5d44788576e9bd2ac6b80f~tplv-t5fjg24jzw-resize-webp:260:260.webp",
   tiktokLink: "https://www.tiktok.com/view/product/1729526532172717045"
 },
 {
-  id: 27,
-  title: "Ensemble Femme Veste Zippée Colorblock + Pantalon Élastique",
+  id: 327,
+  name: "Ensemble Femme Veste Zippée Colorblock + Pantalon Élastique",
   description: "Tenue décontractée avec veste à col montant et pantalon confortable – idéale pour le printemps ou le quotidien.",
   price: "€14.99",
   image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/2390f436d5734264b126771015b08090~tplv-o3syd03w52-resize-webp:260:260.webp",
   tiktokLink: "https://www.tiktok.com/view/product/1729545326834719146"
 },
 {
-  id: 28,
-  title: "Ensemble Femme Veste Zippée à Capuche + Pantalon Cargo",
+  id: 328,
+  name: "Ensemble Femme Veste Zippée à Capuche + Pantalon Cargo",
   description: "Tenue décontractée colorblock pour femme – veste à capuche + pantalon cargo, idéale pour le printemps ou l’automne.",
   price: "€14.99",
   image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/e12b10f8c4f94561aa7b59c55f6b0d16~tplv-o3syd03w52-resize-webp:260:260.webp",
   tiktokLink: "https://www.tiktok.com/view/product/1729541327621363792"
 },
 {
-  id: 29,
-  title: "Ensemble Femme Veste Courte Imprimée + Pantalon",
+  id: 329,
+  name: "Ensemble Femme Veste Courte Imprimée + Pantalon",
   description: "Tenue 2 pièces colorblock zippée pour femme – veste crop + pantalon assorti, confortable pour automne et hiver.",
   price: "€15.99",
   image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/c97c693b48b740a4939304f47e4f6a3f~tplv-o3syd03w52-resize-webp:260:260.webp",
   tiktokLink: "https://www.tiktok.com/view/product/1729480636265306430"
 },
 {
-  id: 30,
-  title: "Ensemble Femme Été T-shirt + Short Imprimé",
+  id: 330,
+  name: "Ensemble Femme Été T-shirt + Short Imprimé",
   description: "Tee-shirt à imprimé lettres et short à taille élastique – tenue légère et confortable pour l'été, idéale au quotidien.",
   price: "€13.99",
   image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/4ae0578102d142cc838f97663d7a1fac~tplv-o3syd03w52-resize-webp:260:260.webp",
   tiktokLink: "https://www.tiktok.com/view/product/1729490569557547444"
 },
 {
-  id: 39,
-  title: "Short en Jean Femme Taille Haute Y2K",
+  id: 331,
+  name: "Short en Jean Femme Taille Haute Y2K",
   description: "Short en jean à taille haute pour femme – style Y2K déchiré avec franges et multi-poches, parfait pour l’été.",
   price: "€12.99",
   image: "https://p16-oec-eu-common-no.tiktokcdn-eu.com/tos-no1a-i-t5fjg24jzw-no/64ac4cb94081448399cb2d05aa0320bb~tplv-t5fjg24jzw-resize-webp:260:260.webp",
   tiktokLink: "https://www.tiktok.com/view/product/1729523847893916448"
 },
 {
-  id:40,
-  title: "Salopette en Jean Femme Décontractée",
+  id: 332,
+  name: "Salopette en Jean Femme Décontractée",
   description: "Salopette en jean unie pour femme – coupe ample, confortable et tendance, parfaite pour toutes les saisons.",
   price: "€13.99",
   image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/66f14532153f44a7b82ca563c1a3f00e~tplv-o3syd03w52-resize-webp:260:260.webp",
   tiktokLink: "https://www.tiktok.com/view/product/1729496873043139078"
 },
 {
-  id: 41,
-  title: "Robe Tube Fendue Femme – Été 2024",
+  id: 333,
+  name: "Robe Tube Fendue Femme – Été 2024",
   description: "Robe moulante sans manches, style bandeau avec fente sur le côté – idéale pour l’été, élégante et confortable.",
   price: "€10.99",
   image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/79c4185a9ef94dafb2e595677c126cf3~tplv-o3syd03w52-resize-webp:260:260.webp",
   tiktokLink: "https://www.tiktok.com/view/product/1729482717129447911"
 },
 {
-  id: 42,
-  title: "Short Cargo 2-en-1 Femme – Multi-poches",
+  id: 334,
+  name: "Short Cargo 2-en-1 Femme – Multi-poches",
   description: "Short jupe en jean avec multiples poches, style casual tendance pour l’été – confortable et stylé pour un look streetwear.",
   price: "€11.49",
   image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/4f2c706eff8e4ced93f37b55685c288a~tplv-o3syd03w52-resize-webp:260:260.webp",
   tiktokLink: "https://www.tiktok.com/view/product/1729494675198023928"
 },
 {
-  id: 43,
-  title: "Ensemble Top + Jupe Femme – Style chic et moulant",
+  id: 335,
+  name: "Ensemble Top + Jupe Femme – Style chic et moulant",
   description: "Set 2 pièces avec top à col rond et manches courtes, jupe moulante – parfait pour un look élégant et féminin.",
   price: "€9.99",
   image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/e839cb7500514d18a14d52a2f287d6eb~tplv-o3syd03w52-resize-webp:260:260.webp",
   tiktokLink: "https://www.tiktok.com/view/product/1729516254651456161"
 },
 {
-  id: 44,
-  title: "Y2K Ensemble Femme – Hoodie + Pantalon Camouflage Rose",
+  id: 336,
+  name: "Y2K Ensemble Femme – Hoodie + Pantalon Camouflage Rose",
   description: "Tenue de sport Y2K pour femme – deux pièces, style Hip-Hop, coupe courte, confortable et tendance pour un look décontracté.",
   price: "€9.99",
   image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/68d34c2140204e8ea0fcbf2bcb35d375~tplv-o3syd03w52-resize-webp:260:260.webp",
   tiktokLink: "https://www.tiktok.com/view/product/1729545808453212893"
 },
 {
-  id: 45,
-  title: "Leggings Sport Taille Haute – Grande Taille",
+  id: 337,
+  name: "Leggings Sport Taille Haute – Grande Taille",
   description: "Leggings confortables et respirants à séchage rapide avec imprimé lettre. Idéals pour le yoga, la gym ou le sport au quotidien. Conviennent à toutes les saisons.",
   price: "€9.99",
   image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/55e3b60ba0104ae9ab7773df44d49c54~tplv-o3syd03w52-resize-webp:260:260.webp",
   tiktokLink: "https://www.tiktok.com/view/product/1729483051453946414"
 },
 {
-  id: 46,
-  title: "Jean Femme Taille Haute Déchiré",
+  id: 338,
+  name: "Jean Femme Taille Haute Déchiré",
   description: "Jean tendance pour femmes, taille haute avec effet déchiré. Style streetwear idéal pour un look mode au quotidien. Convient à toutes les saisons.",
   price: "€14.99",
   image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/46101450e6464f3babf4af3dd3e6e4de~tplv-o3syd03w52-resize-webp:260:260.webp",
   tiktokLink: "https://www.tiktok.com/view/product/1729521321272777527"
 },
 {
-  id: 47,
-  title: "Pantalon Évasé Femme – Style Bootcut",
+  id: 339,
+  name: "Pantalon Évasé Femme – Style Bootcut",
   description: "Pantalon long évasé pour femmes, coupe bootcut confortable. Idéal pour un style casual chic au quotidien, adapté à toutes les saisons.",
   price: "€12.99",
   image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/c1fe0c52b0d243f58f18409624f11fba~tplv-o3syd03w52-resize-webp:260:260.webp",
   tiktokLink: "https://www.tiktok.com/view/product/1729490505928907349"
 },
 {
-  id: 48,
-  title: "Jean Déchiré Femme – Casual Denim",
+  id: 340,
+  name: "Jean Déchiré Femme – Casual Denim",
   description: "Jean simple pour femmes, style déchiré moderne. Parfait pour un look décontracté au quotidien. Confortable et tendance pour toutes les saisons.",
   price: "€14.99",
   image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/2afdb0a958c247a9a1978a4f1c4316bb~tplv-o3syd03w52-resize-webp:260:260.webp",
   tiktokLink: "https://www.tiktok.com/view/product/1729480060131514694"
 },
 {
-  id: 49,
-  title: "Sandales Femme Été – Double Boucle Confort",
+  id: 341,
+  name: "Sandales Femme Été – Double Boucle Confort",
   description: "Sandales plates légères avec double boucle, semelle confortable, revêtement PU et doublure en tissu. Idéales pour la plage ou les journées chaudes.",
   price: "€14.99",
   image: "https://p16-oec-eu-common-no.tiktokcdn-eu.com/tos-no1a-i-t5fjg24jzw-no/8af613792c03499f88b137a80fa9ae52~tplv-t5fjg24jzw-resize-webp:260:260.webp",
   tiktokLink: "https://www.tiktok.com/view/product/1729515685927230295"
 },
 {
-  id: 10050,
-  title: "Sandales Femme Élégantes à Enfiler – Bout Carré",
+  id: 342,
+  name: "Sandales Femme Élégantes à Enfiler – Bout Carré",
   description: "Sandales plates élégantes pour femme, design froncé, bout carré tendance. Idéales pour un look chic et confortable au quotidien.",
   price: "€12.99",
   image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/bee4baa6b0634117b937d8e4b8746a2f~tplv-o3syd03w52-resize-webp:260:260.webp",
   tiktokLink: "https://www.tiktok.com/view/product/1729484228241168817"
 },
 {
-  id: 10051,
-  title: "New Balance 530 – Chaussures de marche unisexe",
+  id: 343,
+  name: "New Balance 530 – Chaussures de marche unisexe",
   description: "Chaussures New Balance confortables et tendance, parfaites pour un usage quotidien. Design casual, pour hommes et femmes.",
   price: "€29.99",
   image: "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/740bd37ab9c34cedafe332a39adfaa87~tplv-aphluv4xwc-resize-webp:260:260.webp",
@@ -791,7 +801,7 @@ export const products: Record<string, Product[]> = {
  
   outils: [
 {
-  id: 1,
+  id: 41,
   name: "Stanley Quencher H2.0 Becher 2025",
   image: "https://p16-oec-eu-common-no.tiktokcdn-eu.com/tos-no1a-i-t5fjg24jzw-no/35a3196e17b64f7dacf76deb82779c1e~tplv-t5fjg24jzw-resize-webp:260:260.webp",
   price: "39.99€",
@@ -799,7 +809,7 @@ export const products: Record<string, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729523138086738199"
 },
 {
-  id: 2,
+  id: 42,
   name: "USB Rechargeable Selfie Ring Light",
   image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/a05bc39c437b4db09597df1dc4489f4d~tplv-o3syd03w52-resize-webp:260:260.webp",
   price: "19.99€",
@@ -807,7 +817,7 @@ export const products: Record<string, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729481045978487174"
 },
 {
-  id: 3,
+  id: 43,
   name: "Luminous Metal Laser Sword Toy",
   image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/6e0fca7091f2433584bec3ca56abe2ff~tplv-o3syd03w52-resize-webp:260:260.webp",
   price: "24.99€",
@@ -815,7 +825,7 @@ export const products: Record<string, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729512864450320600"
 },
 {
-  id: 4,
+  id: 44,
   name: "10000mAh Wireless Fast Charging Power Bank",
   image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/077a93a7168744dda40c78bf0cf42d95~tplv-o3syd03w52-resize-webp:260:260.webp",
   price: "59.99€",
@@ -823,7 +833,7 @@ export const products: Record<string, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729529909647809403"
 },
 {
-  id: 5,
+  id: 45,
   name: "4K Video Recording Digital Camera",
   image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/22fafe92b57d4e5da5a16243beb7fdad~tplv-o3syd03w52-resize-webp:260:260.webp",
   price: "99.99€",
@@ -831,8 +841,8 @@ export const products: Record<string, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729481888520313729"
 },
 {
-  id: 6,
-  title: "Stanley Quencher H2.0 850ml – Becher mit Griff & Strohhalm",
+  id: 46,
+  name: "Stanley Quencher H2.0 850ml – Becher mit Griff & Strohhalm",
   description: "Isolierter Edelstahlbecher (Rosenquarz 2.0), mit 3-Positionen-Deckel, BPA-frei – perfekt für Reisen, Sport & Alltag.",
   price: "€17.99",
   image: "https://p16-oec-eu-common-no.tiktokcdn-eu.com/tos-no1a-i-t5fjg24jzw-no/827009fa944f4f96b9c4ff9e9d8e3fcb~tplv-t5fjg24jzw-resize-webp:260:260.webp",
@@ -845,7 +855,7 @@ export const products: Record<string, Product[]> = {
   
     bijoux: [
     {
-  id: 1,
+  id: 51,
   name: "Rhinestone Decorated Bangle Bracelet",
   image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/70a0cd48f0c24bd39383dd306ec61901~tplv-o3syd03w52-resize-webp:260:260.webp",
   price: "29.99€",
@@ -853,7 +863,7 @@ export const products: Record<string, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729480602598546200"
 },
 {
-  id: 2,
+  id: 52,
   name: "2024 Summer Rhinestone Decorated Trendy Bangle",
   image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/61e9736ead154fbf9935a0a5739cbd5e~tplv-o3syd03w52-resize-webp:260:260.webp",
   price: "29.99€",
@@ -861,128 +871,128 @@ export const products: Record<string, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729491660882811397"
 },
  {
-    id: 3, // Use a unique ID that doesn’t conflict with other products
-    title: "Magnetic Heart Charm Bracelet",
+    id: 53, // Use a unique ID that doesn’t conflict with other products
+    name: "Magnetic Heart Charm Bracelet",
     description: "Trendy magnetic couple bracelet. Perfect romantic gift for birthdays or Valentine's Day.",
     price: "€12.99",
     image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/f6739385c27c4f8c9c31c9f81355dc1c~tplv-o3syd03w52-resize-webp:260:260.webp",
     tiktokLink: "https://www.tiktok.com/view/product/1729483748220115545"
   },
    {
-    id: 4, // Use a unique ID
-    title: "Women's Elegant Watch & Bracelet Set",
+    id: 54, // Use a unique ID
+    name: "Women's Elegant Watch & Bracelet Set",
     description: "Elegant fashion watch and bracelet set – perfect for parties, daily wear, or gifts.",
     price: "€15.99",
     image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/5ff8c2e964a84559981d3fe51477ba63~tplv-o3syd03w52-resize-webp:260:260.webp",
     tiktokLink: "https://www.tiktok.com/view/product/1729503294841002300"
   },
    {
-    id: 5, // Choisir un ID unique
-    title: "Unisex Magnetic Heart Charm Bracelets (2pcs)",
+    id: 55, // Choisir un ID unique
+    name: "Unisex Magnetic Heart Charm Bracelets (2pcs)",
     description: "Set de 2 bracelets magnétiques cœur – unisexe, style minimaliste vintage, idéal comme cadeau ou bijou quotidien.",
     price: "€9.99",
     image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/fe1c1618229a49d4b76996be0cd0ff59~tplv-o3syd03w52-resize-webp:260:260.webp",
     tiktokLink: "https://www.tiktok.com/view/product/1729480189943454057"
   },
   {
-  id: 6, // ID unique suivant
-  title: "Tennis Chain Necklace & Bracelet",
+  id: 56, // ID unique suivant
+  name: "Tennis Chain Necklace & Bracelet",
   description: "Collier et bracelet style Tennis – bijou tendance et élégant pour soirées, tenues quotidiennes ou cadeau d'anniversaire.",
   price: "€12.99",
   image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/40310db664334089b22a96882b429a88~tplv-o3syd03w52-resize-webp:260:260.webp",
   tiktokLink: "https://www.tiktok.com/view/product/1729480258992708101"
 },
 {
-  id: 7, // ID unique suivant
-  title: "Fashion Chain Link Necklace & Bracelet",
+  id: 57, // ID unique suivant
+  name: "Fashion Chain Link Necklace & Bracelet",
   description: "Collier et bracelet chaîne avec strass – style hip-hop brillant pour femmes et hommes, idéal pour soirées ou tenues streetwear.",
   price: "€14.99",
   image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/2a8256f40f684f33bac003079a56a838~tplv-o3syd03w52-resize-webp:260:260.webp",
   tiktokLink: "https://www.tiktok.com/view/product/1729494333214267884"
 },
 {
-  id: 8, // ID unique suivant
-  title: "Vintage Fashion Men's Ring",
+  id: 58, // ID unique suivant
+  name: "Vintage Fashion Men's Ring",
   description: "Bague géométrique vintage pour homme – bijou tendance pour soirée ou usage quotidien, idéal comme cadeau stylé.",
   price: "€7.99",
   image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/5447eb99b8ba4774a3ac910ce9aaf5f3~tplv-o3syd03w52-resize-webp:260:260.webp",
   tiktokLink: "https://www.tiktok.com/view/product/1729482129714944127"
 },
 {
-  id: 9, // ID unique suivant
-  title: "Men's Letter Pendant Bracelet",
+  id: 59, // ID unique suivant
+  name: "Men's Letter Pendant Bracelet",
   description: "Bracelet chaîne dorée avec pendentif lettre – acier inoxydable, élégant et moderne, parfait pour un style tendance ou en cadeau.",
   price: "€10.99",
   image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/a1997a9575b44e77a6489975b6f6ddd6~tplv-o3syd03w52-resize-webp:260:260.webp",
   tiktokLink: "https://www.tiktok.com/view/product/1729508345649207791"
 },
 {
-  id: 10, // ID unique suivant
-  title: "Men's Street Trend Cuban Chain Bracelet",
+  id: 510, // ID unique suivant
+  name: "Men's Street Trend Cuban Chain Bracelet",
   description: "Bracelet cubain pour homme en acier inoxydable – look streetwear et tendance, parfait pour sorties, fêtes ou en cadeau.",
   price: "€11.99",
   image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/1a4cdc45dcdb4339afae9404297d1f9c~tplv-o3syd03w52-resize-webp:260:260.webp",
   tiktokLink: "https://www.tiktok.com/view/product/1729480718503091044"
 },
 {
-  id: 11, // ID unique suivant
-  title: "Boho Style Chain Bracelets",
+  id: 511, // ID unique suivant
+  name: "Boho Style Chain Bracelets",
   description: "Bracelets chaîne style bohème – minimalistes, tendance et élégants, parfaits pour les femmes et filles comme cadeau ou bijou quotidien.",
   price: "€6.99",
   image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/ad70e8a2f7f4405bad1a3b78dd34dfd8~tplv-o3syd03w52-resize-webp:260:260.webp",
   tiktokLink: "https://www.tiktok.com/view/product/1729480134826367236"
 },
 {
-  id: 12, // ID unique suivant
-  title: "Minimalist Ring for Women",
+  id: 512, // ID unique suivant
+  name: "Minimalist Ring for Women",
   description: "Bague minimaliste et élégante – parfaite pour les femmes souhaitant un bijou tendance, discret et raffiné pour le quotidien ou les fêtes.",
   price: "€5.99",
   image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/053cdc36c507453981f0b19c141ae4b0~tplv-o3syd03w52-resize-webp:260:260.webp",
   tiktokLink: "https://www.tiktok.com/view/product/1729480169076267837"
 },
 {
-  id: 13, // ID unique suivant
-  title: "Elegant Gemstone Ring for Women",
+  id: 513, // ID unique suivant
+  name: "Elegant Gemstone Ring for Women",
   description: "Bague élégante décorée de pierre précieuse artificielle – bijou raffiné et tendance, idéal pour femmes et filles en toute occasion.",
   price: "€7.49",
   image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/c3e14344efb942778b45dbfe5fd7e57e~tplv-o3syd03w52-resize-webp:260:260.webp",
   tiktokLink: "https://www.tiktok.com/view/product/1729489652411308854"
 },
 {
-  id: 14, // ID unique suivant
-  title: "Elegant Bangle Bracelet Set",
+  id: 514, // ID unique suivant
+  name: "Elegant Bangle Bracelet Set",
   description: "Set de bracelets joncs élégants en acier inoxydable – parfaits pour soirées, tenues quotidiennes et cadeaux raffinés.",
   price: "€9.49",
   image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/260d5e5cd1a2406da0d1dbea85180cdc~tplv-o3syd03w52-resize-webp:260:260.webp",
   tiktokLink: "https://www.tiktok.com/view/product/1729480060201376146"
 },
 {
-  id: 15, // ID unique suivant
-  title: "Geometric Hoop Earrings for Women",
+  id: 515, // ID unique suivant
+  name: "Geometric Hoop Earrings for Women",
   description: "Boucles d’oreilles créoles géométriques torsadées – look élégant et moderne, parfaites pour les femmes en toute occasion.",
   price: "€6.49",
   image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/fafb52a681ce418da34f033d9a82b04c~tplv-o3syd03w52-resize-webp:260:260.webp",
   tiktokLink: "https://www.tiktok.com/view/product/1729480074217691148"
 },
 {
-  id: 16, // ID unique suivant
-  title: "Vintage Sun Pendant Necklace",
+  id: 516, // ID unique suivant
+  name: "Vintage Sun Pendant Necklace",
   description: "Collier pendentif soleil style vintage – chaîne en acier inoxydable pour femme, bijou tendance pour tenue quotidienne ou soirée.",
   price: "€8.99",
   image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/80b7b6d0e01345e89ed098dbc8a03bc6~tplv-o3syd03w52-resize-webp:260:260.webp",
   tiktokLink: "https://www.tiktok.com/view/product/1729520003944257987"
 },
 {
-  id: 17, // ID unique suivant
-  title: "Rhinestone Decorated Bracelet",
+  id: 517, // ID unique suivant
+  name: "Rhinestone Decorated Bracelet",
   description: "Bracelet décoré de strass – bijou tendance et raffiné pour femmes et hommes, idéal pour un style brillant et un cadeau élégant.",
   price: "€7.99",
   image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/9cddc94d4dab4adab1ef8475f506cf6b~tplv-o3syd03w52-resize-webp:260:260.webp",
   tiktokLink: "https://www.tiktok.com/view/product/1729482623674652932"
 },
 {
-  id: 18, // ID unique suivant
-  title: "Flower Pendant Necklace",
+  id: 518, // ID unique suivant
+  name: "Flower Pendant Necklace",
   description: "Collier pendentif fleur avec strass – bijou élégant pour femme, idéal pour les fêtes, le quotidien ou en cadeau raffiné.",
   price: "€9.49",
   image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/d042de1cada44dfc935a5f703f94e236~tplv-o3syd03w52-resize-webp:260:260.webp",
@@ -992,7 +1002,7 @@ export const products: Record<string, Product[]> = {
 
   	  beaute: [
 {
-  id: 1, 
+  id: 61, 
   name: "Snowolf - Teddybär (110cm, 120cm, 140cm)",
   image: "https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/24654632d60642fc9ff8e9848f571500~tplv-aphluv4xwc-resize-webp:260:260.webp",
   price: "29.99€",
@@ -1000,7 +1010,7 @@ export const products: Record<string, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729509047093599085"
 },
 {
-  id: 2,
+  id: 62,
   name: "Mini-Rosen-Teddybär",
   image: "https://p16-oec-eu-common-no.tiktokcdn-eu.com/tos-no1a-i-t5fjg24jzw-no/a4d1a992d86f4deb92b0f007f5b60617~tplv-t5fjg24jzw-resize-webp:260:260.webp",
   price: "14.99€",
@@ -1008,8 +1018,8 @@ export const products: Record<string, Product[]> = {
   tiktokLink: "https://www.tiktok.com/view/product/1729543362580159065"
 },
 {
-  id: 3,
-  title: "Lancôme Idôle Eau de Parfum – 50ml",
+  id: 63,
+  name: "Lancôme Idôle Eau de Parfum – 50ml",
   description: "Parfum femme longue tenue aux notes de bergamote, jasmin, rose et vanille – un parfum frais et floral signé Lancôme.",
   price: "€54.99",
   image: "https://p16-oec-va.ibyteimg.com/tos-maliva-i-o3syd03w52-us/708483489afa48a295fc06bfa421da2f~tplv-o3syd03w52-resize-webp:260:260.webp",
