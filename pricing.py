@@ -3,10 +3,7 @@ from decimal import Decimal, ROUND_HALF_UP
 import pandas as pd
 from supabase import create_client, Client
 
-# CONFIG SUPABASE (via secrets GitHub)
-SUPABASE_URL = os.getenv("SUPABASE_URL")
-if not SUPABASE_URL:
-    raise RuntimeError("❌ SUPABASE_URL non définie")
+SUPABASE_URL = "https://mploijlpetckumfecvdh.supabase.co"
 
 SUPABASE_KEY = os.getenv("SUPABASE_SECRET_KEY")
 if not SUPABASE_KEY:
