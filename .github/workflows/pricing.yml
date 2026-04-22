@@ -25,6 +25,5 @@ jobs:
       - name: Run pricing script
         env:
           SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
-          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
         run: |
           python pricing.py
