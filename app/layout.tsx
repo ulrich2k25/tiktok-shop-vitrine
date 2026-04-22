@@ -15,10 +15,12 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Ghis TikTok Shop Trendz",
-  description: "Découvrez les meilleurs produits TikTok sur notre vitrine tendance.",
+  description:
+    "Découvrez les meilleurs produits TikTok sur notre vitrine tendance.",
   openGraph: {
     title: "Ghis TikTok Shop Trendz",
-    description: "Découvrez les meilleurs produits TikTok sur notre vitrine tendance.",
+    description:
+      "Découvrez les meilleurs produits TikTok sur notre vitrine tendance.",
     url: "https://www.tiktokshoptrendz.com/",
     siteName: "Ghis TikTok Shop Trendz",
     images: [
@@ -35,7 +37,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Ghis TikTok Shop Trendz",
-    description: "Découvrez les meilleurs produits TikTok sur notre vitrine tendance.",
+    description:
+      "Découvrez les meilleurs produits TikTok sur notre vitrine tendance.",
     images: ["https://i.ibb.co/mCc3h46w/logo.png"],
   },
 };
@@ -47,7 +50,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
         <div className="flex flex-col items-center bg-black text-white py-4">
           <div className="relative">
             <Image
@@ -57,7 +62,7 @@ export default function RootLayout({
               height={300}
               className="object-contain rounded-lg shadow-lg"
               style={{
-                boxShadow: "0 0 40px 15px rgba(255, 0, 153, 0.6)"
+                boxShadow: "0 0 40px 15px rgba(255, 0, 153, 0.6)",
               }}
             />
           </div>
