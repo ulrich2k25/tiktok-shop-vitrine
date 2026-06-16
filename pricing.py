@@ -2,6 +2,9 @@ import os
 from decimal import Decimal, ROUND_HALF_UP
 import pandas as pd
 from supabase import create_client, Client
+from dotenv import load_dotenv
+
+load_dotenv(".env.local")
 
 SUPABASE_URL = "https://mploijlpetckumfecvdh.supabase.co"
 
